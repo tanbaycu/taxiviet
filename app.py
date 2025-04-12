@@ -17,7 +17,7 @@ app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'testuserbaycu@gmail.com'  # Replace with admin email
 app.config['MAIL_PASSWORD'] = 'jqzq kbqh hywd gmxw'  # Replace with app password
 app.config['MAIL_DEFAULT_SENDER'] = ('Tuấn Taxi Website', 'tranquoctuan19861986@gmail.com')
-app.config['ADMIN_EMAIL'] = 'tranquoctuan19861986@gmail.com'  # Replace with admin email
+app.config['ADMIN_EMAIL'] = 'tranminhtan4953@gmail.com'  # Replace with admin email
 
 mail = Mail(app)
 
