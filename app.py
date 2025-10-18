@@ -13,8 +13,10 @@ import os
 from datetime import datetime
 import logging
 from user_agents import parse as parse_ua
+from dotenv import load_dotenv
 
-
+# Load variables from .env
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -23,19 +25,21 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__, static_folder="static", template_folder="templates")
 app.secret_key = os.urandom(24)  # For flash messages
 
-app.config["MAIL_SERVER"] = "smtp.gmail.com"  # Change based on your email provider
-app.config["MAIL_PORT"] = 587
-app.config["MAIL_USE_TLS"] = True
-app.config["MAIL_USERNAME"] = "testuserbaycu@gmail.com"  # Replace with admin email
-app.config["MAIL_PASSWORD"] = "jqzq kbqh hywd gmxw"  # Replace with app password
-app.config["MAIL_DEFAULT_SENDER"] = ("Tuấn Taxi Website", "tanbaycu@gmail.com")
-app.config["ADMIN_EMAIL"] = "tranquoctuan19861986@gmail.com"  # Replace with admin email
+app.config["MAIL_SERVER"] = os.getenv("MAIL_SERVER")
+app.config["MAIL_PORT"] = int(os.getenv("MAIL_PORT", 587))
+app.config["MAIL_USE_TLS"] = os.getenv("MAIL_USE_TLS", "True") == "True"
+app.config["MAIL_USERNAME"] = os.getenv("MAIL_USERNAME")
+app.config["MAIL_PASSWORD"] = os.getenv("MAIL_PASSWORD")
+app.config["MAIL_DEFAULT_SENDER"] = os.getenv("MAIL_DEFAULT_SENDER")
+app.config["ADMIN_EMAIL"] = os.getenv("ADMIN_EMAIL")
 
 mail = Mail(app)
+
 
 def _should_use_mobile_template(user_agent_string: str) -> bool:
     user_agent = parse_ua(user_agent_string or "")
     return bool(user_agent.is_mobile or user_agent.is_tablet)
+
 
 @app.route("/")
 def index():
@@ -43,14 +47,17 @@ def index():
     target_endpoint = "mobile_html" if use_mobile else "index_html"
     return redirect(url_for(target_endpoint), code=302)
 
+
 @app.route("/index.html")
 def index_html():
     return render_template("index.html")
 
+
 @app.route("/mobile.html")
 def mobile_html():
-    
     return render_template("mobile.html")
+
+
 @app.route("/submit_booking", methods=["POST"])
 def submit_booking():
     """Handle booking form submission"""

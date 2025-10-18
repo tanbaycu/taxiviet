@@ -30,11 +30,16 @@ This project is a simple and modern website for a taxi service called "Tuấn Ta
 ```txt
 .
 ├── .editorconfig
+├── .gitignore
 ├── app.py              # Flask backend application
-├── index.html          # Main frontend file
+├── dev-requirements.txt # Python dependencies for development
+├── GEMINI.md           # Project overview for Gemini
 ├── README.md           # This file
-├── requirements.txt    # Python dependencies
-└── vercel.json         # Vercel deployment configuration
+├── requirements.txt    # Python dependencies for production
+├── vercel.json         # Vercel deployment configuration
+└── templates/
+    ├── index.html      # Desktop version of the website
+    └── mobile.html     # Mobile version of the website
 ```
 
 ## Setup and Local Development
@@ -62,22 +67,21 @@ To run this project locally, you will need to have Python and `pip` installed.
 
     ```bash
     pip install -r requirements.txt
+    pip install -r dev-requirements.txt
     ```
 
 4. **Configure environment variables:**
 
-    The application uses `flask-mail` to send emails. You need to configure your SMTP server settings in `app.py`. It is recommended to use environment variables for sensitive information like email credentials.
+    The application uses `flask-mail` to send emails and requires environment variables for configuration. Create a `.env` file in the root of the project and add the following variables with your SMTP server details:
 
-    In `app.py`, modify the following lines with your email provider's details:
-
-    ```python
-    app.config["MAIL_SERVER"] = "smtp.gmail.com"
-    app.config["MAIL_PORT"] = 587
-    app.config["MAIL_USE_TLS"] = True
-    app.config["MAIL_USERNAME"] = "your-email@example.com"
-    app.config["MAIL_PASSWORD"] = "your-email-password"
-    app.config["MAIL_DEFAULT_SENDER"] = ("Your Name", "your-email@example.com")
-    app.config["ADMIN_EMAIL"] = "admin-email@example.com"
+    ```
+    MAIL_SERVER=smtp.gmail.com
+    MAIL_PORT=587
+    MAIL_USE_TLS=True
+    MAIL_USERNAME=your-email@example.com
+    MAIL_PASSWORD=your-email-password
+    MAIL_DEFAULT_SENDER="Your Name <your-email@example.com>"
+    ADMIN_EMAIL=admin-email@example.com
     ```
 
 5. **Run the application:**
