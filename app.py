@@ -12,12 +12,15 @@ from flask_mail import Mail, Message
 import os
 from datetime import datetime
 import logging
+from user_agents import parse as parse_ua
+
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = Flask(__name__, static_folder="static", template_folder=".")
+app = Flask(__name__, static_folder="static", template_folder="templates")
 app.secret_key = os.urandom(24)  # For flash messages
 
 app.config["MAIL_SERVER"] = "smtp.gmail.com"  # Change based on your email provider
@@ -30,12 +33,24 @@ app.config["ADMIN_EMAIL"] = "tranquoctuan19861986@gmail.com"  # Replace with adm
 
 mail = Mail(app)
 
+def _should_use_mobile_template(user_agent_string: str) -> bool:
+    user_agent = parse_ua(user_agent_string or "")
+    return bool(user_agent.is_mobile or user_agent.is_tablet)
 
 @app.route("/")
 def index():
-    return send_file("index.html")
+    use_mobile = _should_use_mobile_template(request.headers.get("User-Agent", ""))
+    target_endpoint = "mobile_html" if use_mobile else "index_html"
+    return redirect(url_for(target_endpoint), code=302)
 
+@app.route("/index.html")
+def index_html():
+    return render_template("index.html")
 
+@app.route("/mobile.html")
+def mobile_html():
+    
+    return render_template("mobile.html")
 @app.route("/submit_booking", methods=["POST"])
 def submit_booking():
     """Handle booking form submission"""
