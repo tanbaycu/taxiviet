@@ -25,21 +25,31 @@ This project is a simple and modern website for a taxi service called "Tuấn Ta
   * Vercel
   * Gunicorn (as a WSGI HTTP server)
 
-## Project Structure
+## Sample Project Structure
 
 ```txt
-.
-├── .editorconfig
+taxiviet/
+│
+├── app/                    # main app package
+│   ├── __init__.py         # create app, load configs, register routes
+│   ├── routes.py           # define routes here (or split later into /routes/)
+│   ├── models.py           # for database models (optional now)
+│   ├── services.py         # helper / logic functions (optional)
+│   ├── templates/          # HTML templates
+│   └── static/             # static files (CSS, JS, images)
+│
+├── tests/                  # future: add test files here
+│   └── test_app.py
+│
+├── .env
 ├── .gitignore
-├── app.py              # Flask backend application
-├── dev-requirements.txt # Python dependencies for development
-├── GEMINI.md           # Project overview for Gemini
-├── README.md           # This file
-├── requirements.txt    # Python dependencies for production
-├── vercel.json         # Vercel deployment configuration
-└── templates/
-    ├── index.html      # Desktop version of the website
-    └── mobile.html     # Mobile version of the website
+├── .editorconfig
+├── requirements.txt
+├── dev-requirements.txt
+├── vercel.json
+├── README.md
+├── GEMINI.md
+└── app.py                  # simple entry point: `from app import app`
 ```
 
 ## Setup and Local Development
@@ -74,7 +84,7 @@ To run this project locally, you will need to have Python and `pip` installed.
 
     The application uses `flask-mail` to send emails and requires environment variables for configuration. Create a `.env` file in the root of the project and add the following variables with your SMTP server details:
 
-    ```
+    ```env
     MAIL_SERVER=smtp.gmail.com
     MAIL_PORT=587
     MAIL_USE_TLS=True
