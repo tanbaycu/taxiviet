@@ -97,6 +97,7 @@ To run this project locally, you will need to have Python and `pip` installed.
 5. **Run the application:**
 
     ```bash
+    npx tailwindcss -i ./app/static/css/input.css -o ./app/static/css/output.css --watch
     python app.py
     ```
 

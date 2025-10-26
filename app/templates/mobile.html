@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi" class="scroll-smooth">
   <head>
     <!-- ============================================
@@ -579,7 +579,8 @@
         backdrop-filter: blur(30px) saturate(180%);
         -webkit-backdrop-filter: blur(30px) saturate(180%);
         border: 1px solid rgba(255, 255, 255, 0.15);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+        box-shadow:
+          0 8px 32px rgba(0, 0, 0, 0.3),
           inset 0 1px 1px rgba(255, 255, 255, 0.1);
         transition: all 0.3s ease;
       }
@@ -588,7 +589,8 @@
         background: rgba(17, 24, 39, 0.6);
         backdrop-filter: blur(40px) saturate(200%);
         -webkit-backdrop-filter: blur(40px) saturate(200%);
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4),
+        box-shadow:
+          0 12px 40px rgba(0, 0, 0, 0.4),
           inset 0 1px 1px rgba(255, 255, 255, 0.15);
       }
 
@@ -598,7 +600,8 @@
         backdrop-filter: blur(25px) saturate(180%);
         -webkit-backdrop-filter: blur(25px) saturate(180%);
         border: 1px solid rgba(255, 255, 255, 0.15);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+        box-shadow:
+          0 8px 32px rgba(0, 0, 0, 0.3),
           inset 0 1px 1px rgba(255, 255, 255, 0.1);
         transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
         position: relative;
@@ -620,7 +623,8 @@
       .glass-card:active {
         background: rgba(255, 255, 255, 0.12);
         border-color: rgba(255, 255, 255, 0.25);
-        box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4),
+        box-shadow:
+          0 12px 48px rgba(0, 0, 0, 0.4),
           inset 0 1px 1px rgba(255, 255, 255, 0.2);
         transform: scale(0.98);
       }
@@ -666,10 +670,8 @@
       .hero-grid {
         position: absolute;
         inset: 0;
-        background-image: linear-gradient(
-            rgba(251, 191, 36, 0.05) 1px,
-            transparent 1px
-          ),
+        background-image:
+          linear-gradient(rgba(251, 191, 36, 0.05) 1px, transparent 1px),
           linear-gradient(90deg, rgba(251, 191, 36, 0.05) 1px, transparent 1px);
         background-size: 40px 40px;
         opacity: 0.5;
@@ -702,7 +704,8 @@
         content: "";
         position: absolute;
         inset: 0;
-        background-image: radial-gradient(
+        background-image:
+          radial-gradient(
             circle at 20% 50%,
             rgba(251, 191, 36, 0.08) 0%,
             transparent 50%
@@ -731,7 +734,8 @@
         content: "";
         position: absolute;
         inset: 0;
-        background-image: radial-gradient(
+        background-image:
+          radial-gradient(
             circle at 80% 20%,
             rgba(251, 191, 36, 0.1) 0%,
             transparent 50%
@@ -770,7 +774,8 @@
       .form-input:focus {
         outline: none;
         border-color: rgba(251, 191, 36, 0.5);
-        box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.15),
+        box-shadow:
+          0 0 0 3px rgba(251, 191, 36, 0.15),
           inset 0 1px 1px rgba(255, 255, 255, 0.15);
         background: rgba(255, 255, 255, 0.12);
         backdrop-filter: blur(25px) saturate(200%);
@@ -1222,7 +1227,7 @@
 
   <body>
     <!-- Scrolling banner -->
-    <div class="scroll-banner fixed top-0 left-0 right-0 z-50">
+    <div class="scroll-banner fixed top-0 right-0 left-0 z-50">
       <div class="scroll-content">
         <span>DỊCH VỤ TAXI CHUYÊN NGHIỆP</span>
         <div class="dot"></div>
@@ -1254,29 +1259,29 @@
     <!-- Floating navigation header with rounded corners -->
     <nav class="floating-header" id="navbar">
       <div class="px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16 sm:h-20">
+        <div class="flex h-16 items-center justify-between sm:h-20">
           <!-- Logo -->
           <div class="flex items-center space-x-2 sm:space-x-3">
             <div
-              class="bg-yellow-400 rounded-lg sm:rounded-xl p-1.5 sm:p-2.5 shadow-lg"
+              class="rounded-lg bg-yellow-400 p-1.5 shadow-lg sm:rounded-xl sm:p-2.5"
             >
               <i
                 data-lucide="car"
-                class="w-5 h-5 sm:w-6 sm:h-6 text-gray-900"
+                class="h-5 w-5 text-gray-900 sm:h-6 sm:w-6"
               ></i>
             </div>
             <div>
               <h1
-                class="text-base sm:text-xl font-bold font-space tracking-tight text-white"
+                class="font-space text-base font-bold tracking-tight text-white sm:text-xl"
               >
                 TUẤN<span class="text-yellow-400">TAXI</span>
               </h1>
-              <p class="text-xs text-gray-400 -mt-0.5">Premium Service</p>
+              <p class="-mt-0.5 text-xs text-gray-400">Premium Service</p>
             </div>
           </div>
 
           <!-- Desktop Navigation -->
-          <div class="hidden lg:flex items-center space-x-8">
+          <div class="hidden items-center space-x-8 lg:flex">
             <a
               href="#home"
               class="nav-link text-sm font-medium text-gray-300 hover:text-yellow-400"
@@ -1308,19 +1313,19 @@
           <div class="flex items-center space-x-2 sm:space-x-4">
             <a
               href="tel:0365942478"
-              class="hidden md:flex items-center space-x-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-3 sm:px-4 py-2 rounded-full transition-all font-medium text-sm"
+              class="hidden items-center space-x-2 rounded-full bg-yellow-400 px-3 py-2 text-sm font-medium text-gray-900 transition-all hover:bg-yellow-500 sm:px-4 md:flex"
             >
-              <i data-lucide="phone" class="w-4 h-4"></i>
+              <i data-lucide="phone" class="h-4 w-4"></i>
               <span>0365 942 478</span>
             </a>
 
             <button
               id="mobile-menu-btn"
-              class="lg:hidden p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors flex items-center justify-center w-10 h-10"
+              class="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-800 p-2 transition-colors hover:bg-gray-700 lg:hidden"
             >
               <i
                 data-lucide="menu"
-                class="w-5 h-5 sm:w-6 sm:h-6 text-gray-300"
+                class="h-5 w-5 text-gray-300 sm:h-6 sm:w-6"
                 id="menu-icon"
               ></i>
             </button>
@@ -1329,38 +1334,38 @@
       </div>
 
       <!-- Mobile menu -->
-      <div id="mobile-menu" class="lg:hidden hidden border-t border-gray-800">
-        <div class="px-4 py-4 space-y-3">
+      <div id="mobile-menu" class="hidden border-t border-gray-800 lg:hidden">
+        <div class="space-y-3 px-4 py-4">
           <a
             href="#home"
-            class="block text-gray-300 hover:text-yellow-400 py-2 transition-colors text-sm"
+            class="block py-2 text-sm text-gray-300 transition-colors hover:text-yellow-400"
             >Trang Chủ</a
           >
           <a
             href="#services"
-            class="block text-gray-300 hover:text-yellow-400 py-2 transition-colors text-sm"
+            class="block py-2 text-sm text-gray-300 transition-colors hover:text-yellow-400"
             >Dịch Vụ</a
           >
           <a
             href="#booking"
-            class="block text-gray-300 hover:text-yellow-400 py-2 transition-colors text-sm"
+            class="block py-2 text-sm text-gray-300 transition-colors hover:text-yellow-400"
             >Đặt Xe</a
           >
           <a
             href="#about"
-            class="block text-gray-300 hover:text-yellow-400 py-2 transition-colors text-sm"
+            class="block py-2 text-sm text-gray-300 transition-colors hover:text-yellow-400"
             >Về Chúng Tôi</a
           >
           <a
             href="#contact"
-            class="block text-gray-300 hover:text-yellow-400 py-2 transition-colors text-sm"
+            class="block py-2 text-sm text-gray-300 transition-colors hover:text-yellow-400"
             >Liên Hệ</a
           >
           <a
             href="tel:0365942478"
-            class="flex items-center space-x-2 bg-yellow-400 text-gray-900 px-4 py-3 rounded-full font-medium mt-3 text-sm"
+            class="mt-3 flex items-center space-x-2 rounded-full bg-yellow-400 px-4 py-3 text-sm font-medium text-gray-900"
           >
-            <i data-lucide="phone" class="w-4 h-4"></i>
+            <i data-lucide="phone" class="h-4 w-4"></i>
             <span>0365 942 478</span>
           </a>
         </div>
@@ -1370,7 +1375,7 @@
     <!-- Completely redesigned hero section with lower padding-top, larger text, 3D liquid glass effect, and optimized mobile layout -->
     <section
       id="home"
-      class="relative min-h-screen flex items-center justify-center overflow-hidden pt-35 sm:pt-96 lg:pt-56 scroll-mt-32"
+      class="relative flex min-h-screen scroll-mt-32 items-center justify-center overflow-hidden pt-35 sm:pt-96 lg:pt-56"
     >
       <!-- Enhanced background -->
       <div class="hero-background">
@@ -1380,13 +1385,13 @@
       </div>
 
       <div
-        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left w-full"
+        class="relative z-10 mx-auto w-full max-w-7xl px-4 text-left sm:px-6 lg:px-8"
       >
         <div class="fade-in-up max-w-3xl">
           <!-- Badge -->
           <div class="mb-6 sm:mb-8">
             <span
-              class="inline-block bg-yellow-400/20 text-yellow-400 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium border border-yellow-400/30"
+              class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-4 py-2 text-xs font-medium text-yellow-400 sm:px-5 sm:py-2.5 sm:text-sm"
             >
               ✨ Dịch vụ taxi hàng đầu Miền Tây
             </span>
@@ -1394,113 +1399,113 @@
 
           <!-- Main Title with 3D Liquid Glass Effect -->
           <h1
-            class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black font-space mb-6 sm:mb-8 leading-tight text-white hero-title-3d"
+            class="font-space hero-title-3d mb-6 text-5xl leading-tight font-black text-white sm:mb-8 sm:text-6xl md:text-7xl lg:text-8xl"
           >
             <span class="block">Dịch vụ</span>
             <span class="block">taxi</span>
             <span
-              class="block bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent hero-title-gradient"
+              class="hero-title-gradient block bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent"
               >hàng đầu</span
             >
             <span
-              class="block text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-medium mt-4 sm:mt-6 text-gray-200"
+              class="mt-4 block text-2xl font-medium text-gray-200 sm:mt-6 sm:text-3xl md:text-5xl lg:text-6xl"
               >Miền Tây</span
             >
           </h1>
 
           <!-- Description -->
           <p
-            class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-10 sm:mb-14 leading-relaxed max-w-2xl font-light"
+            class="mb-10 max-w-2xl text-lg leading-relaxed font-light text-gray-300 sm:mb-14 sm:text-xl md:text-2xl"
           >
             Kết nối Sài Gòn - Miền Tây với dịch vụ taxi chuyên nghiệp,
-            <span class="text-yellow-400 font-semibold"
+            <span class="font-semibold text-yellow-400"
               >an toàn và tiện lợi 24/7</span
             >
           </p>
 
           <!-- CTA Buttons -->
           <div
-            class="flex flex-col gap-4 sm:gap-5 justify-start items-start mb-14 sm:mb-20 w-full sm:w-auto"
+            class="mb-14 flex w-full flex-col items-start justify-start gap-4 sm:mb-20 sm:w-auto sm:gap-5"
           >
             <a
               href="#booking"
-              class="btn-primary w-full sm:w-auto px-8 sm:px-10 py-5 sm:py-6 rounded-full font-bold text-lg sm:text-xl inline-flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl transition-all"
+              class="btn-primary inline-flex w-full items-center justify-center space-x-3 rounded-full px-8 py-5 text-lg font-bold shadow-xl transition-all hover:shadow-2xl sm:w-auto sm:px-10 sm:py-6 sm:text-xl"
             >
-              <i data-lucide="calendar-plus" class="w-6 h-6"></i>
+              <i data-lucide="calendar-plus" class="h-6 w-6"></i>
               <span>Đặt Xe Ngay</span>
             </a>
             <a
               href="tel:0365942478"
-              class="btn-secondary w-full sm:w-auto px-8 sm:px-10 py-5 sm:py-6 rounded-full font-bold text-lg sm:text-xl inline-flex items-center justify-center space-x-3 hover:shadow-xl transition-all"
+              class="btn-secondary inline-flex w-full items-center justify-center space-x-3 rounded-full px-8 py-5 text-lg font-bold transition-all hover:shadow-xl sm:w-auto sm:px-10 sm:py-6 sm:text-xl"
             >
-              <i data-lucide="phone-call" class="w-6 h-6"></i>
+              <i data-lucide="phone-call" class="h-6 w-6"></i>
               <span>0365 942 478</span>
             </a>
           </div>
 
           <!-- Enhanced Features Grid -->
           <div
-            class="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-7 max-w-5xl mt-16 sm:mt-20"
+            class="mt-16 grid max-w-5xl grid-cols-1 gap-5 sm:mt-20 sm:grid-cols-3 sm:gap-7"
           >
             <!-- Feature 1 -->
             <div
-              class="glass-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 fade-in-up hover:border-yellow-400/50 transition-all"
+              class="glass-card fade-in-up rounded-2xl p-6 transition-all hover:border-yellow-400/50 sm:rounded-3xl sm:p-8"
               style="animation-delay: 0.2s"
             >
               <div
-                class="bg-yellow-400/20 w-14 h-14 sm:w-18 sm:h-18 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6"
+                class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-yellow-400/20 sm:mb-6 sm:h-18 sm:w-18 sm:rounded-2xl"
               >
                 <i
                   data-lucide="shield-check"
-                  class="w-7 h-7 sm:w-9 sm:h-9 text-yellow-400"
+                  class="h-7 w-7 text-yellow-400 sm:h-9 sm:w-9"
                 ></i>
               </div>
-              <h3 class="font-bold text-white mb-3 text-base sm:text-lg">
+              <h3 class="mb-3 text-base font-bold text-white sm:text-lg">
                 An Toàn Tuyệt Đối
               </h3>
-              <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
+              <p class="text-sm leading-relaxed text-gray-300 sm:text-base">
                 Xe kiểm định, tài xế chuyên nghiệp, bảo hiểm đầy đủ
               </p>
             </div>
 
             <!-- Feature 2 -->
             <div
-              class="glass-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 fade-in-up hover:border-blue-400/50 transition-all"
+              class="glass-card fade-in-up rounded-2xl p-6 transition-all hover:border-blue-400/50 sm:rounded-3xl sm:p-8"
               style="animation-delay: 0.3s"
             >
               <div
-                class="bg-blue-400/20 w-14 h-14 sm:w-18 sm:h-18 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6"
+                class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-blue-400/20 sm:mb-6 sm:h-18 sm:w-18 sm:rounded-2xl"
               >
                 <i
                   data-lucide="clock"
-                  class="w-7 h-7 sm:w-9 sm:h-9 text-blue-400"
+                  class="h-7 w-7 text-blue-400 sm:h-9 sm:w-9"
                 ></i>
               </div>
-              <h3 class="font-bold text-white mb-3 text-base sm:text-lg">
+              <h3 class="mb-3 text-base font-bold text-white sm:text-lg">
                 Đúng Giờ Cam Kết
               </h3>
-              <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
+              <p class="text-sm leading-relaxed text-gray-300 sm:text-base">
                 Phục vụ 24/7 không ngừng, đón đúng giờ hẹn
               </p>
             </div>
 
             <!-- Feature 3 -->
             <div
-              class="glass-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 fade-in-up hover:border-green-400/50 transition-all"
+              class="glass-card fade-in-up rounded-2xl p-6 transition-all hover:border-green-400/50 sm:rounded-3xl sm:p-8"
               style="animation-delay: 0.4s"
             >
               <div
-                class="bg-green-400/20 w-14 h-14 sm:w-18 sm:h-18 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6"
+                class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-green-400/20 sm:mb-6 sm:h-18 sm:w-18 sm:rounded-2xl"
               >
                 <i
                   data-lucide="dollar-sign"
-                  class="w-7 h-7 sm:w-9 sm:h-9 text-green-400"
+                  class="h-7 w-7 text-green-400 sm:h-9 sm:w-9"
                 ></i>
               </div>
-              <h3 class="font-bold text-white mb-3 text-base sm:text-lg">
+              <h3 class="mb-3 text-base font-bold text-white sm:text-lg">
                 Giá Cả Minh Bạch
               </h3>
-              <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
+              <p class="text-sm leading-relaxed text-gray-300 sm:text-base">
                 Không phát sinh thêm chi phí, giá cố định
               </p>
             </div>
@@ -1510,13 +1515,13 @@
 
       <!-- Scroll Indicator -->
       <div
-        class="absolute bottom-8 sm:bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce"
+        class="absolute bottom-8 left-1/2 -translate-x-1/2 transform animate-bounce sm:bottom-12"
       >
         <div
-          class="w-6 h-10 sm:w-7 sm:h-12 border-2 border-yellow-400 rounded-full flex justify-center"
+          class="flex h-10 w-6 justify-center rounded-full border-2 border-yellow-400 sm:h-12 sm:w-7"
         >
           <div
-            class="w-1.5 h-3 sm:h-4 bg-yellow-400 rounded-full mt-2 sm:mt-2.5 animate-pulse"
+            class="mt-2 h-3 w-1.5 animate-pulse rounded-full bg-yellow-400 sm:mt-2.5 sm:h-4"
           ></div>
         </div>
       </div>
@@ -1524,8 +1529,11 @@
 
     <style>
       .hero-title-3d {
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2),
-          0 8px 16px rgba(0, 0, 0, 0.1), 0 0 20px rgba(251, 191, 36, 0.2);
+        text-shadow:
+          0 2px 4px rgba(0, 0, 0, 0.3),
+          0 4px 8px rgba(0, 0, 0, 0.2),
+          0 8px 16px rgba(0, 0, 0, 0.1),
+          0 0 20px rgba(251, 191, 36, 0.2);
         filter: drop-shadow(0 4px 12px rgba(251, 191, 36, 0.15));
         letter-spacing: -0.02em;
       }
@@ -1551,8 +1559,10 @@
         }
 
         .hero-title-3d {
-          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3),
-            0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1),
+          text-shadow:
+            0 1px 2px rgba(0, 0, 0, 0.3),
+            0 2px 4px rgba(0, 0, 0, 0.2),
+            0 4px 8px rgba(0, 0, 0, 0.1),
             0 0 15px rgba(251, 191, 36, 0.15);
         }
       }
@@ -1562,20 +1572,20 @@
     <!-- Services Section -->
     <section
       id="services"
-      class="py-16 sm:py-20 lg:py-32 relative section-bg-dark"
+      class="section-bg-dark relative py-16 sm:py-20 lg:py-32"
     >
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="text-center mb-12 sm:mb-20 fade-in-up">
+        <div class="fade-in-up mb-12 text-center sm:mb-20">
           <div class="mb-3 sm:mb-4">
             <span
-              class="inline-block bg-yellow-400/20 text-yellow-400 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium border border-yellow-400/30"
+              class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-3 py-1.5 text-xs font-medium text-yellow-400 sm:px-4 sm:py-2 sm:text-sm"
             >
               🚗 Dịch vụ của chúng tôi
             </span>
           </div>
           <h2
-            class="text-2xl sm:text-3xl md:text-5xl font-bold font-space mb-4 sm:mb-6 text-white"
+            class="font-space mb-4 text-2xl font-bold text-white sm:mb-6 sm:text-3xl md:text-5xl"
           >
             Đa dạng
             <span
@@ -1584,7 +1594,7 @@
             >
           </h2>
           <p
-            class="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            class="mx-auto max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg md:text-xl"
           >
             Phù hợp với mọi nhu cầu di chuyển của bạn từ cá nhân đến doanh
             nghiệp
@@ -1593,48 +1603,48 @@
 
         <!-- Dynamic services grid with staggered layout -->
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8"
         >
           <!-- Service 1 -->
           <div
-            class="service-card glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 fade-in-up group"
+            class="service-card glass-card fade-in-up group rounded-2xl p-5 sm:rounded-3xl sm:p-8"
             style="animation-delay: 0.1s"
           >
             <div
-              class="bg-gradient-to-br from-yellow-400/20 to-yellow-400/10 w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-active:scale-110 transition-transform"
+              class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-yellow-400/20 to-yellow-400/10 transition-transform group-active:scale-110 sm:mb-6 sm:h-20 sm:w-20 sm:rounded-2xl"
             >
               <i
                 data-lucide="map-pin"
-                class="w-7 h-7 sm:w-10 sm:h-10 text-yellow-400"
+                class="h-7 w-7 text-yellow-400 sm:h-10 sm:w-10"
               ></i>
             </div>
             <h3
-              class="text-lg sm:text-2xl font-bold mb-3 sm:mb-4 group-active:text-yellow-400 transition-colors text-white"
+              class="mb-3 text-lg font-bold text-white transition-colors group-active:text-yellow-400 sm:mb-4 sm:text-2xl"
             >
               Taxi Liên Tỉnh
             </h3>
             <p
-              class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 leading-relaxed"
+              class="mb-4 text-sm leading-relaxed text-gray-300 sm:mb-6 sm:text-base"
             >
               Dịch vụ taxi liên tỉnh Sài Gòn - Miền Tây, đưa đón tận nơi, giá cả
               hợp lý và minh bạch.
             </p>
-            <ul class="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-400">
+            <ul class="space-y-2 text-xs text-gray-400 sm:space-y-3 sm:text-sm">
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-yellow-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-yellow-400"
                 ></div>
                 <span>Đưa đón tận nhà</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-yellow-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-yellow-400"
                 ></div>
                 <span>Giá cố định, không phát sinh</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-yellow-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-yellow-400"
                 ></div>
                 <span>Xe đời mới, máy lạnh</span>
               </li>
@@ -1643,44 +1653,44 @@
 
           <!-- Service 2 -->
           <div
-            class="service-card glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 fade-in-up group"
+            class="service-card glass-card fade-in-up group rounded-2xl p-5 sm:rounded-3xl sm:p-8"
             style="animation-delay: 0.2s"
           >
             <div
-              class="bg-gradient-to-br from-blue-400/20 to-blue-400/10 w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-active:scale-110 transition-transform"
+              class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-blue-400/20 to-blue-400/10 transition-transform group-active:scale-110 sm:mb-6 sm:h-20 sm:w-20 sm:rounded-2xl"
             >
               <i
                 data-lucide="clock"
-                class="w-7 h-7 sm:w-10 sm:h-10 text-blue-400"
+                class="h-7 w-7 text-blue-400 sm:h-10 sm:w-10"
               ></i>
             </div>
             <h3
-              class="text-lg sm:text-2xl font-bold mb-3 sm:mb-4 group-active:text-blue-400 transition-colors text-white"
+              class="mb-3 text-lg font-bold text-white transition-colors group-active:text-blue-400 sm:mb-4 sm:text-2xl"
             >
               Taxi 24/7
             </h3>
             <p
-              class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 leading-relaxed"
+              class="mb-4 text-sm leading-relaxed text-gray-300 sm:mb-6 sm:text-base"
             >
               Phục vụ khách hàng 24/7, sẵn sàng đáp ứng mọi nhu cầu di chuyển
               bất kể ngày đêm.
             </p>
-            <ul class="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-400">
+            <ul class="space-y-2 text-xs text-gray-400 sm:space-y-3 sm:text-sm">
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-blue-400"
                 ></div>
                 <span>Phục vụ 24/7</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-blue-400"
                 ></div>
                 <span>Đặt xe nhanh chóng</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-blue-400"
                 ></div>
                 <span>Tài xế kinh nghiệm</span>
               </li>
@@ -1689,44 +1699,44 @@
 
           <!-- Service 3 -->
           <div
-            class="service-card glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 fade-in-up group"
+            class="service-card glass-card fade-in-up group rounded-2xl p-5 sm:rounded-3xl sm:p-8"
             style="animation-delay: 0.3s"
           >
             <div
-              class="bg-gradient-to-br from-green-400/20 to-green-400/10 w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-active:scale-110 transition-transform"
+              class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-green-400/20 to-green-400/10 transition-transform group-active:scale-110 sm:mb-6 sm:h-20 sm:w-20 sm:rounded-2xl"
             >
               <i
                 data-lucide="users"
-                class="w-7 h-7 sm:w-10 sm:h-10 text-green-400"
+                class="h-7 w-7 text-green-400 sm:h-10 sm:w-10"
               ></i>
             </div>
             <h3
-              class="text-lg sm:text-2xl font-bold mb-3 sm:mb-4 group-active:text-green-400 transition-colors text-white"
+              class="mb-3 text-lg font-bold text-white transition-colors group-active:text-green-400 sm:mb-4 sm:text-2xl"
             >
               Taxi Nhóm
             </h3>
             <p
-              class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 leading-relaxed"
+              class="mb-4 text-sm leading-relaxed text-gray-300 sm:mb-6 sm:text-base"
             >
               Dịch vụ taxi cho nhóm đông người, xe 7 chỗ, 16 chỗ phù hợp cho gia
               đình và công ty.
             </p>
-            <ul class="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-400">
+            <ul class="space-y-2 text-xs text-gray-400 sm:space-y-3 sm:text-sm">
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-green-400"
                 ></div>
                 <span>Xe 7-16 chỗ</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-green-400"
                 ></div>
                 <span>Phù hợp nhóm đông</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-green-400"
                 ></div>
                 <span>Giá ưu đãi nhóm</span>
               </li>
@@ -1735,44 +1745,44 @@
 
           <!-- Service 4 -->
           <div
-            class="service-card glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 fade-in-up group"
+            class="service-card glass-card fade-in-up group rounded-2xl p-5 sm:rounded-3xl sm:p-8"
             style="animation-delay: 0.4s"
           >
             <div
-              class="bg-gradient-to-br from-purple-400/20 to-purple-400/10 w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-active:scale-110 transition-transform"
+              class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-purple-400/20 to-purple-400/10 transition-transform group-active:scale-110 sm:mb-6 sm:h-20 sm:w-20 sm:rounded-2xl"
             >
               <i
                 data-lucide="plane"
-                class="w-7 h-7 sm:w-10 sm:h-10 text-purple-400"
+                class="h-7 w-7 text-purple-400 sm:h-10 sm:w-10"
               ></i>
             </div>
             <h3
-              class="text-lg sm:text-2xl font-bold mb-3 sm:mb-4 group-active:text-purple-400 transition-colors text-white"
+              class="mb-3 text-lg font-bold text-white transition-colors group-active:text-purple-400 sm:mb-4 sm:text-2xl"
             >
               Taxi Sân Bay
             </h3>
             <p
-              class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 leading-relaxed"
+              class="mb-4 text-sm leading-relaxed text-gray-300 sm:mb-6 sm:text-base"
             >
               Dịch vụ đưa đón sân bay Tân Sơn Nhất, Cần Thơ với giá cố định,
               không lo tắc đường.
             </p>
-            <ul class="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-400">
+            <ul class="space-y-2 text-xs text-gray-400 sm:space-y-3 sm:text-sm">
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-purple-400"
                 ></div>
                 <span>Đón đúng giờ</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-purple-400"
                 ></div>
                 <span>Theo dõi chuyến bay</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-purple-400"
                 ></div>
                 <span>Hỗ trợ hành lý</span>
               </li>
@@ -1781,44 +1791,44 @@
 
           <!-- Service 5 -->
           <div
-            class="service-card glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 fade-in-up group"
+            class="service-card glass-card fade-in-up group rounded-2xl p-5 sm:rounded-3xl sm:p-8"
             style="animation-delay: 0.5s"
           >
             <div
-              class="bg-gradient-to-br from-orange-400/20 to-orange-400/10 w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-active:scale-110 transition-transform"
+              class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-orange-400/20 to-orange-400/10 transition-transform group-active:scale-110 sm:mb-6 sm:h-20 sm:w-20 sm:rounded-2xl"
             >
               <i
                 data-lucide="calendar-days"
-                class="w-7 h-7 sm:w-10 sm:h-10 text-orange-400"
+                class="h-7 w-7 text-orange-400 sm:h-10 sm:w-10"
               ></i>
             </div>
             <h3
-              class="text-lg sm:text-2xl font-bold mb-3 sm:mb-4 group-active:text-orange-400 transition-colors text-white"
+              class="mb-3 text-lg font-bold text-white transition-colors group-active:text-orange-400 sm:mb-4 sm:text-2xl"
             >
               Taxi Theo Tháng
             </h3>
             <p
-              class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 leading-relaxed"
+              class="mb-4 text-sm leading-relaxed text-gray-300 sm:mb-6 sm:text-base"
             >
               Dịch vụ taxi theo tháng cho doanh nghiệp và cá nhân, tiết kiệm chi
               phí di chuyển hàng ngày.
             </p>
-            <ul class="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-400">
+            <ul class="space-y-2 text-xs text-gray-400 sm:space-y-3 sm:text-sm">
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-orange-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"
                 ></div>
                 <span>Giá ưu đãi theo tháng</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-orange-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"
                 ></div>
                 <span>Tài xế cố định</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-orange-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"
                 ></div>
                 <span>Hóa đơn VAT</span>
               </li>
@@ -1827,44 +1837,44 @@
 
           <!-- Service 6 -->
           <div
-            class="service-card glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 fade-in-up group"
+            class="service-card glass-card fade-in-up group rounded-2xl p-5 sm:rounded-3xl sm:p-8"
             style="animation-delay: 0.6s"
           >
             <div
-              class="bg-gradient-to-br from-pink-400/20 to-pink-400/10 w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-active:scale-110 transition-transform"
+              class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-pink-400/20 to-pink-400/10 transition-transform group-active:scale-110 sm:mb-6 sm:h-20 sm:w-20 sm:rounded-2xl"
             >
               <i
                 data-lucide="heart"
-                class="w-7 h-7 sm:w-10 sm:h-10 text-pink-400"
+                class="h-7 w-7 text-pink-400 sm:h-10 sm:w-10"
               ></i>
             </div>
             <h3
-              class="text-lg sm:text-2xl font-bold mb-3 sm:mb-4 group-active:text-pink-400 transition-colors text-white"
+              class="mb-3 text-lg font-bold text-white transition-colors group-active:text-pink-400 sm:mb-4 sm:text-2xl"
             >
               Taxi Cưới Hỏi
             </h3>
             <p
-              class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 leading-relaxed"
+              class="mb-4 text-sm leading-relaxed text-gray-300 sm:mb-6 sm:text-base"
             >
               Dịch vụ taxi cho các dịp đặc biệt như cưới hỏi, xe hoa, trang trí
               theo yêu cầu.
             </p>
-            <ul class="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-400">
+            <ul class="space-y-2 text-xs text-gray-400 sm:space-y-3 sm:text-sm">
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-pink-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-pink-400"
                 ></div>
                 <span>Xe hoa trang trí</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-pink-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-pink-400"
                 ></div>
                 <span>Tài xế lịch sự</span>
               </li>
               <li class="flex items-center space-x-3">
                 <div
-                  class="w-2 h-2 bg-pink-400 rounded-full flex-shrink-0"
+                  class="h-2 w-2 flex-shrink-0 rounded-full bg-pink-400"
                 ></div>
                 <span>Giá trọn gói</span>
               </li>
@@ -1877,20 +1887,20 @@
     <!-- Booking Section -->
     <section
       id="booking"
-      class="py-16 sm:py-20 lg:py-32 relative section-bg-light"
+      class="section-bg-light relative py-16 sm:py-20 lg:py-32"
     >
-      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="text-center mb-12 sm:mb-20 fade-in-up">
+        <div class="fade-in-up mb-12 text-center sm:mb-20">
           <div class="mb-3 sm:mb-4">
             <span
-              class="inline-block bg-yellow-400/20 text-yellow-400 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium border border-yellow-400/30"
+              class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-3 py-1.5 text-xs font-medium text-yellow-400 sm:px-4 sm:py-2 sm:text-sm"
             >
               📅 Đặt xe ngay
             </span>
           </div>
           <h2
-            class="text-2xl sm:text-3xl md:text-5xl font-bold font-space mb-4 sm:mb-6 text-white"
+            class="font-space mb-4 text-2xl font-bold text-white sm:mb-6 sm:text-3xl md:text-5xl"
           >
             Đặt xe
             <span
@@ -1899,7 +1909,7 @@
             >
           </h2>
           <p
-            class="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            class="mx-auto max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg md:text-xl"
           >
             Điền thông tin bên dưới hoặc gọi trực tiếp hotline để được hỗ trợ
             nhanh nhất
@@ -1908,55 +1918,55 @@
 
         <!-- Enhanced booking form -->
         <div
-          class="glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-12 fade-in-up max-w-2xl mx-auto"
+          class="glass-card fade-in-up mx-auto max-w-2xl rounded-2xl p-5 sm:rounded-3xl sm:p-8 lg:p-12"
         >
-          <div class="flex items-center space-x-3 mb-6 sm:mb-8">
+          <div class="mb-6 flex items-center space-x-3 sm:mb-8">
             <div
-              class="bg-yellow-400/20 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center"
+              class="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-400/20 sm:h-12 sm:w-12 sm:rounded-xl"
             >
               <i
                 data-lucide="calendar-plus"
-                class="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400"
+                class="h-5 w-5 text-yellow-400 sm:h-6 sm:w-6"
               ></i>
             </div>
-            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-white">
+            <h3 class="text-lg font-bold text-white sm:text-xl md:text-2xl">
               Thông Tin Đặt Xe
             </h3>
           </div>
 
           <form id="bookingForm" class="space-y-4 sm:space-y-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
               <div>
                 <label
-                  class="block text-xs sm:text-sm font-medium text-gray-300 mb-2"
+                  class="mb-2 block text-xs font-medium text-gray-300 sm:text-sm"
                 >
                   <i
                     data-lucide="user"
-                    class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                    class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                   ></i>
                   Họ và tên *
                 </label>
                 <input
                   type="text"
                   required
-                  class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl transition-all"
+                  class="form-input w-full rounded-lg px-3 py-3 transition-all sm:rounded-xl sm:px-4 sm:py-4"
                   placeholder="Nhập họ tên của bạn"
                 />
               </div>
               <div>
                 <label
-                  class="block text-xs sm:text-sm font-medium text-gray-300 mb-2"
+                  class="mb-2 block text-xs font-medium text-gray-300 sm:text-sm"
                 >
                   <i
                     data-lucide="phone"
-                    class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                    class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                   ></i>
                   Số điện thoại *
                 </label>
                 <input
                   type="tel"
                   required
-                  class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl transition-all"
+                  class="form-input w-full rounded-lg px-3 py-3 transition-all sm:rounded-xl sm:px-4 sm:py-4"
                   placeholder="Nhập số điện thoại"
                 />
               </div>
@@ -1964,142 +1974,142 @@
 
             <div>
               <label
-                class="block text-xs sm:text-sm font-medium text-gray-300 mb-2"
+                class="mb-2 block text-xs font-medium text-gray-300 sm:text-sm"
               >
                 <i
                   data-lucide="mail"
-                  class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                  class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                 ></i>
                 Email
               </label>
               <input
                 type="email"
-                class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl transition-all"
+                class="form-input w-full rounded-lg px-3 py-3 transition-all sm:rounded-xl sm:px-4 sm:py-4"
                 placeholder="Nhập địa chỉ email của bạn"
               />
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
               <div>
                 <label
-                  class="block text-xs sm:text-sm font-medium text-gray-300 mb-2"
+                  class="mb-2 block text-xs font-medium text-gray-300 sm:text-sm"
                 >
                   <i
                     data-lucide="map-pin"
-                    class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                    class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                   ></i>
                   Điểm đón *
                 </label>
                 <input
                   type="text"
                   required
-                  class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl transition-all"
+                  class="form-input w-full rounded-lg px-3 py-3 transition-all sm:rounded-xl sm:px-4 sm:py-4"
                   placeholder="Địa chỉ đón"
                 />
               </div>
               <div>
                 <label
-                  class="block text-xs sm:text-sm font-medium text-gray-300 mb-2"
+                  class="mb-2 block text-xs font-medium text-gray-300 sm:text-sm"
                 >
                   <i
                     data-lucide="navigation"
-                    class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                    class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                   ></i>
                   Điểm đến *
                 </label>
                 <input
                   type="text"
                   required
-                  class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl transition-all"
+                  class="form-input w-full rounded-lg px-3 py-3 transition-all sm:rounded-xl sm:px-4 sm:py-4"
                   placeholder="Địa chỉ đến"
                 />
               </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
               <div>
                 <label
-                  class="block text-xs sm:text-sm font-medium text-gray-300 mb-2"
+                  class="mb-2 block text-xs font-medium text-gray-300 sm:text-sm"
                 >
                   <i
                     data-lucide="calendar"
-                    class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                    class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                   ></i>
                   Ngày đi *
                 </label>
                 <input
                   type="date"
                   required
-                  class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl transition-all"
+                  class="form-input w-full rounded-lg px-3 py-3 transition-all sm:rounded-xl sm:px-4 sm:py-4"
                 />
               </div>
               <div>
                 <label
-                  class="block text-xs sm:text-sm font-medium text-gray-300 mb-2"
+                  class="mb-2 block text-xs font-medium text-gray-300 sm:text-sm"
                 >
                   <i
                     data-lucide="clock"
-                    class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                    class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                   ></i>
                   Giờ đi *
                 </label>
                 <input
                   type="time"
                   required
-                  class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl transition-all"
+                  class="form-input w-full rounded-lg px-3 py-3 transition-all sm:rounded-xl sm:px-4 sm:py-4"
                 />
               </div>
             </div>
 
             <div>
               <label
-                class="block text-xs sm:text-sm font-medium text-gray-300 mb-2"
+                class="mb-2 block text-xs font-medium text-gray-300 sm:text-sm"
               >
                 <i
                   data-lucide="message-square"
-                  class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                  class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                 ></i>
                 Ghi chú
               </label>
               <textarea
                 rows="3"
-                class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl transition-all resize-none"
+                class="form-input w-full resize-none rounded-lg px-3 py-3 transition-all sm:rounded-xl sm:px-4 sm:py-4"
                 placeholder="Thông tin thêm (số hành khách, yêu cầu đặc biệt...)"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              class="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-3 sm:py-4 px-4 sm:px-6 rounded-lg sm:rounded-xl transition-all transform active:scale-95 shadow-lg text-sm sm:text-base"
+              class="w-full transform rounded-lg bg-yellow-400 px-4 py-3 text-sm font-semibold text-gray-900 shadow-lg transition-all hover:bg-yellow-500 active:scale-95 sm:rounded-xl sm:px-6 sm:py-4 sm:text-base"
             >
               <i
                 data-lucide="send"
-                class="w-4 h-4 sm:w-5 sm:h-5 inline mr-2"
+                class="mr-2 inline h-4 w-4 sm:h-5 sm:w-5"
               ></i>
               Gửi Yêu Cầu Đặt Xe
             </button>
           </form>
 
           <!-- Quick contact info -->
-          <div class="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-700">
+          <div class="mt-6 border-t border-gray-700 pt-4 sm:mt-8 sm:pt-6">
             <div class="text-center">
-              <p class="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base">
+              <p class="mb-3 text-sm text-gray-400 sm:mb-4 sm:text-base">
                 Hoặc liên hệ trực tiếp:
               </p>
-              <div class="flex flex-col gap-2 sm:gap-4 justify-center">
+              <div class="flex flex-col justify-center gap-2 sm:gap-4">
                 <a
                   href="tel:0365942478"
-                  class="flex items-center justify-center space-x-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-medium transition-all text-sm sm:text-base"
+                  class="flex items-center justify-center space-x-2 rounded-lg bg-yellow-400 px-4 py-2.5 text-sm font-medium text-gray-900 transition-all hover:bg-yellow-500 sm:rounded-xl sm:px-6 sm:py-3 sm:text-base"
                 >
-                  <i data-lucide="phone" class="w-4 h-4"></i>
+                  <i data-lucide="phone" class="h-4 w-4"></i>
                   <span>0365 942 478</span>
                 </a>
                 <a
                   href="https://zalo.me/0365942478"
                   target="_blank"
-                  class="flex items-center justify-center space-x-2 bg-blue-500 hover:bg-blue-600 text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-medium transition-all text-sm sm:text-base"
+                  class="flex items-center justify-center space-x-2 rounded-lg bg-blue-500 px-4 py-2.5 text-sm font-medium text-white transition-all hover:bg-blue-600 sm:rounded-xl sm:px-6 sm:py-3 sm:text-base"
                 >
-                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <i data-lucide="message-circle" class="h-4 w-4"></i>
                   <span>Chat Zalo</span>
                 </a>
               </div>
@@ -2112,22 +2122,22 @@
     <!-- About Section -->
     <section
       id="about"
-      class="py-16 sm:py-20 lg:py-32 relative section-bg-dark"
+      class="section-bg-dark relative py-16 sm:py-20 lg:py-32"
     >
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
           <!-- Content -->
           <div class="fade-in-left">
             <div class="mb-4 sm:mb-6">
               <span
-                class="inline-block bg-yellow-400/20 text-yellow-400 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium border border-yellow-400/30"
+                class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-3 py-1.5 text-xs font-medium text-yellow-400 sm:px-4 sm:py-2 sm:text-sm"
               >
                 ℹ️ Về chúng tôi
               </span>
             </div>
 
             <h2
-              class="text-2xl sm:text-3xl md:text-5xl font-bold font-space mb-6 sm:mb-8 text-white"
+              class="font-space mb-6 text-2xl font-bold text-white sm:mb-8 sm:text-3xl md:text-5xl"
             >
               Về
               <span
@@ -2137,11 +2147,11 @@
             </h2>
 
             <div
-              class="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-300 leading-relaxed"
+              class="space-y-4 text-base leading-relaxed text-gray-300 sm:space-y-6 sm:text-lg"
             >
               <p>
                 Với nhiều năm kinh nghiệm trong lĩnh vực vận tải hành khách,
-                <span class="text-yellow-400 font-semibold"
+                <span class="font-semibold text-yellow-400"
                   >Tuấn Taxi (Taxi Xanh Cái Bè)</span
                 >
                 đã trở thành thương hiệu taxi uy tín hàng đầu tại khu vực Miền
@@ -2151,14 +2161,14 @@
               <p>
                 Chúng tôi chuyên cung cấp dịch vụ taxi liên tỉnh Sài Gòn - Miền
                 Tây với
-                <span class="text-yellow-400 font-semibold"
+                <span class="font-semibold text-yellow-400"
                   >đội ngũ tài xế chuyên nghiệp</span
                 >, xe đời mới, máy lạnh và cam kết phục vụ khách hàng 24/7.
               </p>
 
               <p>
                 Sứ mệnh của chúng tôi là mang đến cho khách hàng những chuyến đi
-                <span class="text-yellow-400 font-semibold"
+                <span class="font-semibold text-yellow-400"
                   >an toàn, tiện lợi và tiết kiệm</span
                 >, kết nối mọi người với những điểm đến yêu thích trong khu vực
                 Miền Tây.
@@ -2167,57 +2177,57 @@
 
             <!-- Enhanced Features -->
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 mt-8 sm:mt-12"
+              class="mt-8 grid grid-cols-1 gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-6"
             >
               <div
-                class="flex items-center space-x-3 p-3 sm:p-4 rounded-lg sm:rounded-xl bg-gray-800 border border-gray-700 hover:border-yellow-400/50 transition-all"
+                class="flex items-center space-x-3 rounded-lg border border-gray-700 bg-gray-800 p-3 transition-all hover:border-yellow-400/50 sm:rounded-xl sm:p-4"
               >
-                <div class="bg-yellow-400/20 rounded-full p-2 flex-shrink-0">
+                <div class="flex-shrink-0 rounded-full bg-yellow-400/20 p-2">
                   <i
                     data-lucide="shield-check"
-                    class="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400"
+                    class="h-5 w-5 text-yellow-400 sm:h-6 sm:w-6"
                   ></i>
                 </div>
-                <span class="font-medium text-white text-sm sm:text-base"
+                <span class="text-sm font-medium text-white sm:text-base"
                   >An toàn tuyệt đối</span
                 >
               </div>
               <div
-                class="flex items-center space-x-3 p-3 sm:p-4 rounded-lg sm:rounded-xl bg-gray-800 border border-gray-700 hover:border-yellow-400/50 transition-all"
+                class="flex items-center space-x-3 rounded-lg border border-gray-700 bg-gray-800 p-3 transition-all hover:border-yellow-400/50 sm:rounded-xl sm:p-4"
               >
-                <div class="bg-yellow-400/20 rounded-full p-2 flex-shrink-0">
+                <div class="flex-shrink-0 rounded-full bg-yellow-400/20 p-2">
                   <i
                     data-lucide="clock"
-                    class="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400"
+                    class="h-5 w-5 text-yellow-400 sm:h-6 sm:w-6"
                   ></i>
                 </div>
-                <span class="font-medium text-white text-sm sm:text-base"
+                <span class="text-sm font-medium text-white sm:text-base"
                   >Đúng giờ cam kết</span
                 >
               </div>
               <div
-                class="flex items-center space-x-3 p-3 sm:p-4 rounded-lg sm:rounded-xl bg-gray-800 border border-gray-700 hover:border-yellow-400/50 transition-all"
+                class="flex items-center space-x-3 rounded-lg border border-gray-700 bg-gray-800 p-3 transition-all hover:border-yellow-400/50 sm:rounded-xl sm:p-4"
               >
-                <div class="bg-yellow-400/20 rounded-full p-2 flex-shrink-0">
+                <div class="flex-shrink-0 rounded-full bg-yellow-400/20 p-2">
                   <i
                     data-lucide="dollar-sign"
-                    class="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400"
+                    class="h-5 w-5 text-yellow-400 sm:h-6 sm:w-6"
                   ></i>
                 </div>
-                <span class="font-medium text-white text-sm sm:text-base"
+                <span class="text-sm font-medium text-white sm:text-base"
                   >Giá cả minh bạch</span
                 >
               </div>
               <div
-                class="flex items-center space-x-3 p-3 sm:p-4 rounded-lg sm:rounded-xl bg-gray-800 border border-gray-700 hover:border-yellow-400/50 transition-all"
+                class="flex items-center space-x-3 rounded-lg border border-gray-700 bg-gray-800 p-3 transition-all hover:border-yellow-400/50 sm:rounded-xl sm:p-4"
               >
-                <div class="bg-yellow-400/20 rounded-full p-2 flex-shrink-0">
+                <div class="flex-shrink-0 rounded-full bg-yellow-400/20 p-2">
                   <i
                     data-lucide="headphones"
-                    class="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400"
+                    class="h-5 w-5 text-yellow-400 sm:h-6 sm:w-6"
                   ></i>
                 </div>
-                <span class="font-medium text-white text-sm sm:text-base"
+                <span class="text-sm font-medium text-white sm:text-base"
                   >Hỗ trợ 24/7</span
                 >
               </div>
@@ -2227,64 +2237,64 @@
           <!-- Right side commitment section -->
           <div class="fade-in-right">
             <div
-              class="glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-12"
+              class="glass-card rounded-2xl p-5 sm:rounded-3xl sm:p-8 lg:p-12"
             >
-              <div class="text-center mb-8 sm:mb-10">
+              <div class="mb-8 text-center sm:mb-10">
                 <div
-                  class="bg-yellow-400/20 w-16 h-16 sm:w-20 sm:h-20 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6"
+                  class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-lg bg-yellow-400/20 sm:mb-6 sm:h-20 sm:w-20 sm:rounded-2xl"
                 >
                   <i
                     data-lucide="award"
-                    class="w-8 h-8 sm:w-10 sm:h-10 text-yellow-400"
+                    class="h-8 w-8 text-yellow-400 sm:h-10 sm:w-10"
                   ></i>
                 </div>
                 <h3
-                  class="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-4 text-white"
+                  class="mb-2 text-xl font-bold text-white sm:mb-4 sm:text-2xl md:text-3xl"
                 >
                   Cam kết Chất Lượng
                 </h3>
-                <p class="text-xs sm:text-sm text-gray-300">
+                <p class="text-xs text-gray-300 sm:text-sm">
                   Những giá trị cốt lõi của chúng tôi
                 </p>
               </div>
 
               <div class="space-y-4 sm:space-y-6">
                 <div
-                  class="p-4 sm:p-6 bg-gray-800 rounded-lg sm:rounded-2xl border border-gray-700 hover:border-yellow-400/50 transition-all"
+                  class="rounded-lg border border-gray-700 bg-gray-800 p-4 transition-all hover:border-yellow-400/50 sm:rounded-2xl sm:p-6"
                 >
                   <h4
-                    class="font-bold text-yellow-400 mb-3 sm:mb-4 text-sm sm:text-base"
+                    class="mb-3 text-sm font-bold text-yellow-400 sm:mb-4 sm:text-base"
                   >
                     Cam kết của chúng tôi:
                   </h4>
                   <ul
-                    class="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-300"
+                    class="space-y-2 text-xs text-gray-300 sm:space-y-3 sm:text-sm"
                   >
                     <li class="flex items-center space-x-3">
                       <i
                         data-lucide="check-circle"
-                        class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 flex-shrink-0"
+                        class="h-4 w-4 flex-shrink-0 text-yellow-400 sm:h-5 sm:w-5"
                       ></i>
                       <span>Xe đời mới, máy lạnh, sạch sẽ</span>
                     </li>
                     <li class="flex items-center space-x-3">
                       <i
                         data-lucide="check-circle"
-                        class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 flex-shrink-0"
+                        class="h-4 w-4 flex-shrink-0 text-yellow-400 sm:h-5 sm:w-5"
                       ></i>
                       <span>Tài xế kinh nghiệm, lịch sự</span>
                     </li>
                     <li class="flex items-center space-x-3">
                       <i
                         data-lucide="check-circle"
-                        class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 flex-shrink-0"
+                        class="h-4 w-4 flex-shrink-0 text-yellow-400 sm:h-5 sm:w-5"
                       ></i>
                       <span>Giá cả cạnh tranh, minh bạch</span>
                     </li>
                     <li class="flex items-center space-x-3">
                       <i
                         data-lucide="check-circle"
-                        class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 flex-shrink-0"
+                        class="h-4 w-4 flex-shrink-0 text-yellow-400 sm:h-5 sm:w-5"
                       ></i>
                       <span>Hỗ trợ khách hàng 24/7</span>
                     </li>
@@ -2292,41 +2302,41 @@
                 </div>
 
                 <div
-                  class="p-4 sm:p-6 bg-gray-800 rounded-lg sm:rounded-2xl border border-gray-700 hover:border-blue-400/50 transition-all"
+                  class="rounded-lg border border-gray-700 bg-gray-800 p-4 transition-all hover:border-blue-400/50 sm:rounded-2xl sm:p-6"
                 >
                   <h4
-                    class="font-bold text-blue-400 mb-3 sm:mb-4 text-sm sm:text-base"
+                    class="mb-3 text-sm font-bold text-blue-400 sm:mb-4 sm:text-base"
                   >
                     Khu vực phục vụ:
                   </h4>
                   <div
-                    class="grid grid-cols-1 gap-2 sm:gap-3 text-xs sm:text-sm text-gray-300"
+                    class="grid grid-cols-1 gap-2 text-xs text-gray-300 sm:gap-3 sm:text-sm"
                   >
                     <div class="flex items-center space-x-2">
                       <i
                         data-lucide="map-pin"
-                        class="w-4 h-4 text-blue-400 flex-shrink-0"
+                        class="h-4 w-4 flex-shrink-0 text-blue-400"
                       ></i>
                       <span>Sài Gòn - Cái Bè</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <i
                         data-lucide="map-pin"
-                        class="w-4 h-4 text-blue-400 flex-shrink-0"
+                        class="h-4 w-4 flex-shrink-0 text-blue-400"
                       ></i>
                       <span>Sài Gòn - Mỹ Tho</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <i
                         data-lucide="map-pin"
-                        class="w-4 h-4 text-blue-400 flex-shrink-0"
+                        class="h-4 w-4 flex-shrink-0 text-blue-400"
                       ></i>
                       <span>Sài Gòn - Cần Thơ</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <i
                         data-lucide="map-pin"
-                        class="w-4 h-4 text-blue-400 flex-shrink-0"
+                        class="h-4 w-4 flex-shrink-0 text-blue-400"
                       ></i>
                       <span>Sài Gòn - An Giang</span>
                     </div>
@@ -2342,19 +2352,19 @@
     <!-- Contact Section -->
     <section
       id="contact"
-      class="py-16 sm:py-20 lg:py-32 relative section-bg-light"
+      class="section-bg-light relative py-16 sm:py-20 lg:py-32"
     >
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 sm:mb-20 fade-in-up">
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="fade-in-up mb-12 text-center sm:mb-20">
           <div class="mb-3 sm:mb-4">
             <span
-              class="inline-block bg-yellow-400/20 text-yellow-400 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium border border-yellow-400/30"
+              class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-3 py-1.5 text-xs font-medium text-yellow-400 sm:px-4 sm:py-2 sm:text-sm"
             >
               📞 Liên hệ với chúng tôi
             </span>
           </div>
           <h2
-            class="text-2xl sm:text-3xl md:text-5xl font-bold font-space mb-4 sm:mb-6 text-white"
+            class="font-space mb-4 text-2xl font-bold text-white sm:mb-6 sm:text-3xl md:text-5xl"
           >
             Liên hệ
             <span
@@ -2363,125 +2373,125 @@
             >
           </h2>
           <p
-            class="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            class="mx-auto max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg md:text-xl"
           >
             Sẵn sàng phục vụ bạn 24/7. Hãy liên hệ ngay để được tư vấn và đặt xe
           </p>
         </div>
 
-        <div class="grid lg:grid-cols-3 gap-6 lg:gap-8">
+        <div class="grid gap-6 lg:grid-cols-3 lg:gap-8">
           <!-- Enhanced Contact Cards -->
-          <div class="lg:col-span-1 space-y-4 sm:space-y-6">
+          <div class="space-y-4 sm:space-y-6 lg:col-span-1">
             <!-- Phone -->
             <div
-              class="glass-card rounded-2xl sm:rounded-3xl p-4 sm:p-8 fade-in-left group hover:border-yellow-400/50"
+              class="glass-card fade-in-left group rounded-2xl p-4 hover:border-yellow-400/50 sm:rounded-3xl sm:p-8"
             >
               <div class="flex items-center space-x-3 sm:space-x-4">
                 <div
-                  class="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-lg sm:rounded-2xl p-3 sm:p-4 group-active:scale-110 transition-transform shadow-lg flex-shrink-0"
+                  class="flex-shrink-0 rounded-lg bg-gradient-to-br from-yellow-400 to-yellow-500 p-3 shadow-lg transition-transform group-active:scale-110 sm:rounded-2xl sm:p-4"
                 >
                   <i
                     data-lucide="phone"
-                    class="w-6 h-6 sm:w-8 sm:h-8 text-gray-900"
+                    class="h-6 w-6 text-gray-900 sm:h-8 sm:w-8"
                   ></i>
                 </div>
                 <div>
-                  <h3 class="font-bold text-base sm:text-xl mb-1 text-white">
+                  <h3 class="mb-1 text-base font-bold text-white sm:text-xl">
                     Hotline
                   </h3>
                   <a
                     href="tel:0365942478"
-                    class="text-yellow-400 text-lg sm:text-2xl font-bold hover:text-yellow-500 transition-colors"
+                    class="text-lg font-bold text-yellow-400 transition-colors hover:text-yellow-500 sm:text-2xl"
                   >
                     0365 942 478
                   </a>
-                  <p class="text-xs text-gray-400 mt-1">Phục vụ 24/7</p>
+                  <p class="mt-1 text-xs text-gray-400">Phục vụ 24/7</p>
                 </div>
               </div>
             </div>
 
             <!-- Zalo -->
             <div
-              class="glass-card rounded-2xl sm:rounded-3xl p-4 sm:p-8 fade-in-left group hover:border-blue-400/50"
+              class="glass-card fade-in-left group rounded-2xl p-4 hover:border-blue-400/50 sm:rounded-3xl sm:p-8"
               style="animation-delay: 0.1s"
             >
               <div class="flex items-center space-x-3 sm:space-x-4">
                 <div
-                  class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg sm:rounded-2xl p-3 sm:p-4 group-active:scale-110 transition-transform flex-shrink-0"
+                  class="flex-shrink-0 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 p-3 transition-transform group-active:scale-110 sm:rounded-2xl sm:p-4"
                 >
                   <i
                     data-lucide="message-circle"
-                    class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                    class="h-6 w-6 text-white sm:h-8 sm:w-8"
                   ></i>
                 </div>
                 <div>
-                  <h3 class="font-bold text-base sm:text-xl mb-1 text-white">
+                  <h3 class="mb-1 text-base font-bold text-white sm:text-xl">
                     Zalo
                   </h3>
                   <a
                     href="https://zalo.me/0365942478"
                     target="_blank"
-                    class="text-blue-400 text-base sm:text-lg font-medium hover:text-blue-500 transition-colors"
+                    class="text-base font-medium text-blue-400 transition-colors hover:text-blue-500 sm:text-lg"
                   >
                     Chat ngay
                   </a>
-                  <p class="text-xs text-gray-400 mt-1">Phản hồi nhanh</p>
+                  <p class="mt-1 text-xs text-gray-400">Phản hồi nhanh</p>
                 </div>
               </div>
             </div>
 
             <!-- Facebook -->
             <div
-              class="glass-card rounded-2xl sm:rounded-3xl p-4 sm:p-8 fade-in-left group hover:border-blue-600/50"
+              class="glass-card fade-in-left group rounded-2xl p-4 hover:border-blue-600/50 sm:rounded-3xl sm:p-8"
               style="animation-delay: 0.2s"
             >
               <div class="flex items-center space-x-3 sm:space-x-4">
                 <div
-                  class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg sm:rounded-2xl p-3 sm:p-4 group-active:scale-110 transition-transform flex-shrink-0"
+                  class="flex-shrink-0 rounded-lg bg-gradient-to-br from-blue-600 to-blue-700 p-3 transition-transform group-active:scale-110 sm:rounded-2xl sm:p-4"
                 >
                   <i
                     data-lucide="facebook"
-                    class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                    class="h-6 w-6 text-white sm:h-8 sm:w-8"
                   ></i>
                 </div>
                 <div>
-                  <h3 class="font-bold text-base sm:text-xl mb-1 text-white">
+                  <h3 class="mb-1 text-base font-bold text-white sm:text-xl">
                     Facebook
                   </h3>
                   <a
                     href="https://www.facebook.com/taxi.xanh.cai.be"
                     target="_blank"
-                    class="text-blue-400 text-base sm:text-lg font-medium hover:text-blue-500 transition-colors"
+                    class="text-base font-medium text-blue-400 transition-colors hover:text-blue-500 sm:text-lg"
                   >
                     Taxi Xanh Cái Bè
                   </a>
-                  <p class="text-xs text-gray-400 mt-1">Theo dõi tin tức</p>
+                  <p class="mt-1 text-xs text-gray-400">Theo dõi tin tức</p>
                 </div>
               </div>
             </div>
 
             <!-- Location -->
             <div
-              class="glass-card rounded-2xl sm:rounded-3xl p-4 sm:p-8 fade-in-left group hover:border-green-400/50"
+              class="glass-card fade-in-left group rounded-2xl p-4 hover:border-green-400/50 sm:rounded-3xl sm:p-8"
               style="animation-delay: 0.3s"
             >
               <div class="flex items-center space-x-3 sm:space-x-4">
                 <div
-                  class="bg-gradient-to-br from-green-500 to-green-600 rounded-lg sm:rounded-2xl p-3 sm:p-4 group-active:scale-110 transition-transform flex-shrink-0"
+                  class="flex-shrink-0 rounded-lg bg-gradient-to-br from-green-500 to-green-600 p-3 transition-transform group-active:scale-110 sm:rounded-2xl sm:p-4"
                 >
                   <i
                     data-lucide="map-pin"
-                    class="w-6 h-6 sm:w-8 sm:h-8 text-white"
+                    class="h-6 w-6 text-white sm:h-8 sm:w-8"
                   ></i>
                 </div>
                 <div>
-                  <h3 class="font-bold text-base sm:text-xl mb-1 text-white">
+                  <h3 class="mb-1 text-base font-bold text-white sm:text-xl">
                     Khu vực phục vụ
                   </h3>
-                  <p class="text-gray-300 text-base sm:text-lg">
+                  <p class="text-base text-gray-300 sm:text-lg">
                     Sài Gòn - Miền Tây
                   </p>
-                  <p class="text-xs text-gray-400 mt-1">Toàn khu vực</p>
+                  <p class="mt-1 text-xs text-gray-400">Toàn khu vực</p>
                 </div>
               </div>
             </div>
@@ -2489,60 +2499,60 @@
 
           <!-- Enhanced Contact Form -->
           <div
-            class="lg:col-span-2 glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-12 fade-in-right"
+            class="glass-card fade-in-right rounded-2xl p-5 sm:rounded-3xl sm:p-8 lg:col-span-2 lg:p-12"
           >
-            <div class="text-center mb-6 sm:mb-10">
+            <div class="mb-6 text-center sm:mb-10">
               <div
-                class="bg-yellow-400/20 w-14 h-14 sm:w-20 sm:h-20 rounded-lg sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6"
+                class="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-lg bg-yellow-400/20 sm:mb-6 sm:h-20 sm:w-20 sm:rounded-2xl"
               >
                 <i
                   data-lucide="mail"
-                  class="w-7 h-7 sm:w-10 sm:h-10 text-yellow-400"
+                  class="h-7 w-7 text-yellow-400 sm:h-10 sm:w-10"
                 ></i>
               </div>
               <h3
-                class="text-lg sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-4 text-white"
+                class="mb-2 text-lg font-bold text-white sm:mb-4 sm:text-2xl md:text-3xl"
               >
                 Gửi Tin Nhắn Cho Chúng Tôi
               </h3>
-              <p class="text-xs sm:text-sm text-gray-300">
+              <p class="text-xs text-gray-300 sm:text-sm">
                 Chúng tôi sẽ phản hồi trong thời gian sớm nhất
               </p>
             </div>
 
             <form class="space-y-4 sm:space-y-6" id="contactForm">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
                 <div class="space-y-2">
                   <label
-                    class="block text-xs sm:text-sm font-medium text-gray-300"
+                    class="block text-xs font-medium text-gray-300 sm:text-sm"
                   >
                     <i
                       data-lucide="user"
-                      class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                      class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                     ></i>
                     Họ và tên *
                   </label>
                   <input
                     type="text"
                     required
-                    class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl text-white placeholder-gray-400 focus:outline-none"
+                    class="form-input w-full rounded-lg px-3 py-3 text-white placeholder-gray-400 focus:outline-none sm:rounded-xl sm:px-4 sm:py-4"
                     placeholder="Nhập họ tên"
                   />
                 </div>
                 <div class="space-y-2">
                   <label
-                    class="block text-xs sm:text-sm font-medium text-gray-300"
+                    class="block text-xs font-medium text-gray-300 sm:text-sm"
                   >
                     <i
                       data-lucide="phone"
-                      class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                      class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                     ></i>
                     Số điện thoại *
                   </label>
                   <input
                     type="tel"
                     required
-                    class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl text-white placeholder-gray-400 focus:outline-none"
+                    class="form-input w-full rounded-lg px-3 py-3 text-white placeholder-gray-400 focus:outline-none sm:rounded-xl sm:px-4 sm:py-4"
                     placeholder="Nhập số điện thoại"
                   />
                 </div>
@@ -2550,33 +2560,33 @@
 
               <div class="space-y-2">
                 <label
-                  class="block text-xs sm:text-sm font-medium text-gray-300"
+                  class="block text-xs font-medium text-gray-300 sm:text-sm"
                 >
                   <i
                     data-lucide="mail"
-                    class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                    class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                   ></i>
                   Email
                 </label>
                 <input
                   type="email"
-                  class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl text-white placeholder-gray-400 focus:outline-none"
+                  class="form-input w-full rounded-lg px-3 py-3 text-white placeholder-gray-400 focus:outline-none sm:rounded-xl sm:px-4 sm:py-4"
                   placeholder="Nhập email (không bắt buộc)"
                 />
               </div>
 
               <div class="space-y-2">
                 <label
-                  class="block text-xs sm:text-sm font-medium text-gray-300"
+                  class="block text-xs font-medium text-gray-300 sm:text-sm"
                 >
                   <i
                     data-lucide="tag"
-                    class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                    class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                   ></i>
                   Chủ đề
                 </label>
                 <select
-                  class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl text-white focus:outline-none text-sm sm:text-base"
+                  class="form-input w-full rounded-lg px-3 py-3 text-sm text-white focus:outline-none sm:rounded-xl sm:px-4 sm:py-4 sm:text-base"
                 >
                   <option value="booking">Đặt xe</option>
                   <option value="price">Hỏi giá</option>
@@ -2587,27 +2597,27 @@
 
               <div class="space-y-2">
                 <label
-                  class="block text-xs sm:text-sm font-medium text-gray-300"
+                  class="block text-xs font-medium text-gray-300 sm:text-sm"
                 >
                   <i
                     data-lucide="message-square"
-                    class="w-3 h-3 sm:w-4 sm:h-4 inline mr-2"
+                    class="mr-2 inline h-3 w-3 sm:h-4 sm:w-4"
                   ></i>
                   Tin nhắn *
                 </label>
                 <textarea
                   rows="5"
                   required
-                  class="form-input w-full px-3 sm:px-4 py-3 sm:py-4 rounded-lg sm:rounded-xl text-white placeholder-gray-400 focus:outline-none text-sm sm:text-base"
+                  class="form-input w-full rounded-lg px-3 py-3 text-sm text-white placeholder-gray-400 focus:outline-none sm:rounded-xl sm:px-4 sm:py-4 sm:text-base"
                   placeholder="Nhập tin nhắn của bạn..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                class="btn-primary w-full py-3 sm:py-5 rounded-lg sm:rounded-xl text-gray-900 font-semibold text-sm sm:text-lg flex items-center justify-center space-x-2 sm:space-x-3 shadow-lg"
+                class="btn-primary flex w-full items-center justify-center space-x-2 rounded-lg py-3 text-sm font-semibold text-gray-900 shadow-lg sm:space-x-3 sm:rounded-xl sm:py-5 sm:text-lg"
               >
-                <i data-lucide="send" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                <i data-lucide="send" class="h-4 w-4 sm:h-5 sm:w-5"></i>
                 <span>Gửi Tin Nhắn</span>
               </button>
             </form>
@@ -2616,36 +2626,36 @@
       </div>
     </section>
 
-    <footer class="bg-gray-900 border-t border-gray-800 py-12 sm:py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer class="border-t border-gray-800 bg-gray-900 py-12 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12"
+          class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-4"
         >
           <!-- Company Info -->
           <div class="lg:col-span-2">
-            <div class="flex items-center space-x-2 sm:space-x-4 mb-6 sm:mb-8">
+            <div class="mb-6 flex items-center space-x-2 sm:mb-8 sm:space-x-4">
               <div
-                class="bg-yellow-400 rounded-lg sm:rounded-2xl p-2 sm:p-3 shadow-lg"
+                class="rounded-lg bg-yellow-400 p-2 shadow-lg sm:rounded-2xl sm:p-3"
               >
                 <i
                   data-lucide="car"
-                  class="w-6 h-6 sm:w-8 sm:h-8 text-gray-900"
+                  class="h-6 w-6 text-gray-900 sm:h-8 sm:w-8"
                 ></i>
               </div>
               <div>
                 <h1
-                  class="text-2xl sm:text-3xl font-bold font-space tracking-tight text-white"
+                  class="font-space text-2xl font-bold tracking-tight text-white sm:text-3xl"
                 >
                   TUẤN<span class="text-yellow-400">TAXI</span>
                 </h1>
-                <p class="text-xs sm:text-sm text-gray-400">
+                <p class="text-xs text-gray-400 sm:text-sm">
                   Premium Taxi Service
                 </p>
               </div>
             </div>
 
             <p
-              class="text-gray-300 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base"
+              class="mb-6 text-sm leading-relaxed text-gray-300 sm:mb-8 sm:text-base"
             >
               Dịch vụ taxi liên tỉnh Sài Gòn - Miền Tây uy tín, chuyên nghiệp.
               Phục vụ 24/7 với đội ngũ tài xế kinh nghiệm và xe đời mới.
@@ -2655,30 +2665,30 @@
               <a
                 href="https://www.facebook.com/taxi.xanh.cai.be"
                 target="_blank"
-                class="bg-white/5 hover:bg-yellow-400/20 p-3 sm:p-4 rounded-lg sm:rounded-2xl transition-all group"
+                class="group rounded-lg bg-white/5 p-3 transition-all hover:bg-yellow-400/20 sm:rounded-2xl sm:p-4"
               >
                 <i
                   data-lucide="facebook"
-                  class="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400 group-active:scale-110 transition-transform"
+                  class="h-5 w-5 text-yellow-400 transition-transform group-active:scale-110 sm:h-6 sm:w-6"
                 ></i>
               </a>
               <a
                 href="https://zalo.me/0365942478"
                 target="_blank"
-                class="bg-white/5 hover:bg-yellow-400/20 p-3 sm:p-4 rounded-lg sm:rounded-2xl transition-all group"
+                class="group rounded-lg bg-white/5 p-3 transition-all hover:bg-yellow-400/20 sm:rounded-2xl sm:p-4"
               >
                 <i
                   data-lucide="message-circle"
-                  class="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400 group-active:scale-110 transition-transform"
+                  class="h-5 w-5 text-yellow-400 transition-transform group-active:scale-110 sm:h-6 sm:w-6"
                 ></i>
               </a>
               <a
                 href="tel:0365942478"
-                class="bg-white/5 hover:bg-yellow-400/20 p-3 sm:p-4 rounded-lg sm:rounded-2xl transition-all group"
+                class="group rounded-lg bg-white/5 p-3 transition-all hover:bg-yellow-400/20 sm:rounded-2xl sm:p-4"
               >
                 <i
                   data-lucide="phone"
-                  class="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400 group-active:scale-110 transition-transform"
+                  class="h-5 w-5 text-yellow-400 transition-transform group-active:scale-110 sm:h-6 sm:w-6"
                 ></i>
               </a>
             </div>
@@ -2686,52 +2696,52 @@
 
           <!-- Quick Links -->
           <div>
-            <h3 class="font-bold text-base sm:text-xl mb-4 sm:mb-8 text-white">
+            <h3 class="mb-4 text-base font-bold text-white sm:mb-8 sm:text-xl">
               Liên Kết Nhanh
             </h3>
-            <ul class="space-y-2 sm:space-y-4 text-sm">
+            <ul class="space-y-2 text-sm sm:space-y-4">
               <li>
                 <a
                   href="#home"
-                  class="text-gray-300 hover:text-yellow-400 transition-colors flex items-center space-x-2"
+                  class="flex items-center space-x-2 text-gray-300 transition-colors hover:text-yellow-400"
                 >
-                  <i data-lucide="home" class="w-4 h-4"></i>
+                  <i data-lucide="home" class="h-4 w-4"></i>
                   <span>Trang Chủ</span>
                 </a>
               </li>
               <li>
                 <a
                   href="#services"
-                  class="text-gray-300 hover:text-yellow-400 transition-colors flex items-center space-x-2"
+                  class="flex items-center space-x-2 text-gray-300 transition-colors hover:text-yellow-400"
                 >
-                  <i data-lucide="briefcase" class="w-4 h-4"></i>
+                  <i data-lucide="briefcase" class="h-4 w-4"></i>
                   <span>Dịch Vụ</span>
                 </a>
               </li>
               <li>
                 <a
                   href="#booking"
-                  class="text-gray-300 hover:text-yellow-400 transition-colors flex items-center space-x-2"
+                  class="flex items-center space-x-2 text-gray-300 transition-colors hover:text-yellow-400"
                 >
-                  <i data-lucide="calendar" class="w-4 h-4"></i>
+                  <i data-lucide="calendar" class="h-4 w-4"></i>
                   <span>Đặt Xe</span>
                 </a>
               </li>
               <li>
                 <a
                   href="#about"
-                  class="text-gray-300 hover:text-yellow-400 transition-colors flex items-center space-x-2"
+                  class="flex items-center space-x-2 text-gray-300 transition-colors hover:text-yellow-400"
                 >
-                  <i data-lucide="info" class="w-4 h-4"></i>
+                  <i data-lucide="info" class="h-4 w-4"></i>
                   <span>Về Chúng Tôi</span>
                 </a>
               </li>
               <li>
                 <a
                   href="#contact"
-                  class="text-gray-300 hover:text-yellow-400 transition-colors flex items-center space-x-2"
+                  class="flex items-center space-x-2 text-gray-300 transition-colors hover:text-yellow-400"
                 >
-                  <i data-lucide="phone" class="w-4 h-4"></i>
+                  <i data-lucide="phone" class="h-4 w-4"></i>
                   <span>Liên Hệ</span>
                 </a>
               </li>
@@ -2740,35 +2750,35 @@
 
           <!-- Contact Info -->
           <div>
-            <h3 class="font-bold text-base sm:text-xl mb-4 sm:mb-8 text-white">
+            <h3 class="mb-4 text-base font-bold text-white sm:mb-8 sm:text-xl">
               Thông Tin Liên Hệ
             </h3>
-            <ul class="space-y-2 sm:space-y-4 text-sm">
+            <ul class="space-y-2 text-sm sm:space-y-4">
               <li class="flex items-center space-x-3">
-                <div class="bg-yellow-400/10 rounded-full p-2 flex-shrink-0">
-                  <i data-lucide="phone" class="w-4 h-4 text-yellow-400"></i>
+                <div class="flex-shrink-0 rounded-full bg-yellow-400/10 p-2">
+                  <i data-lucide="phone" class="h-4 w-4 text-yellow-400"></i>
                 </div>
                 <a
                   href="tel:0365942478"
-                  class="text-gray-300 hover:text-yellow-400 transition-colors"
+                  class="text-gray-300 transition-colors hover:text-yellow-400"
                   >0365 942 478</a
                 >
               </li>
               <li class="flex items-center space-x-3">
-                <div class="bg-yellow-400/10 rounded-full p-2 flex-shrink-0">
-                  <i data-lucide="map-pin" class="w-4 h-4 text-yellow-400"></i>
+                <div class="flex-shrink-0 rounded-full bg-yellow-400/10 p-2">
+                  <i data-lucide="map-pin" class="h-4 w-4 text-yellow-400"></i>
                 </div>
                 <span class="text-gray-300">Khu vực Miền Tây</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="bg-yellow-400/10 rounded-full p-2 flex-shrink-0">
-                  <i data-lucide="clock" class="w-4 h-4 text-yellow-400"></i>
+                <div class="flex-shrink-0 rounded-full bg-yellow-400/10 p-2">
+                  <i data-lucide="clock" class="h-4 w-4 text-yellow-400"></i>
                 </div>
                 <span class="text-gray-300">24/7 - Phục vụ không ngừng</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="bg-yellow-400/10 rounded-full p-2 flex-shrink-0">
-                  <i data-lucide="mail" class="w-4 h-4 text-yellow-400"></i>
+                <div class="flex-shrink-0 rounded-full bg-yellow-400/10 p-2">
+                  <i data-lucide="mail" class="h-4 w-4 text-yellow-400"></i>
                 </div>
                 <span class="text-gray-300">tuantaxi@gmail.com</span>
               </li>
@@ -2776,18 +2786,18 @@
           </div>
         </div>
 
-        <div class="border-t border-gray-800 mt-8 sm:mt-16 pt-6 sm:pt-8">
+        <div class="mt-8 border-t border-gray-800 pt-6 sm:mt-16 sm:pt-8">
           <div
-            class="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0 text-xs sm:text-sm text-gray-400"
+            class="flex flex-col items-center justify-between space-y-3 text-xs text-gray-400 sm:flex-row sm:space-y-0 sm:text-sm"
           >
             <p class="text-center sm:text-left">
               © 2025 Tuấn Taxi - Taxi Xanh Cái Bè. Tất cả quyền được bảo lưu.
             </p>
             <div class="flex items-center space-x-4 sm:space-x-6">
-              <a href="#" class="hover:text-yellow-400 transition-colors"
+              <a href="#" class="transition-colors hover:text-yellow-400"
                 >Chính sách bảo mật</a
               >
-              <a href="#" class="hover:text-yellow-400 transition-colors"
+              <a href="#" class="transition-colors hover:text-yellow-400"
                 >Điều khoản sử dụng</a
               >
             </div>
@@ -2799,9 +2809,9 @@
     <!-- Back to top button -->
     <button
       id="back-to-top"
-      class="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-500 text-gray-900 p-3 sm:p-4 rounded-full shadow-lg transition-all transform active:scale-95 z-40 opacity-0 invisible"
+      class="invisible fixed right-6 bottom-6 z-40 transform rounded-full bg-yellow-400 p-3 text-gray-900 opacity-0 shadow-lg transition-all hover:bg-yellow-500 active:scale-95 sm:p-4"
     >
-      <i data-lucide="arrow-up" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+      <i data-lucide="arrow-up" class="h-5 w-5 sm:h-6 sm:w-6"></i>
     </button>
 
     <script>
@@ -2873,7 +2883,7 @@
         ?.addEventListener("submit", function (e) {
           e.preventDefault();
           alert(
-            "Cảm ơn bạn đã đặt xe! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất."
+            "Cảm ơn bạn đã đặt xe! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.",
           );
         });
 
