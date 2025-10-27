@@ -1,8 +1,5 @@
-// Initialize Lucide icons
-lucide.createIcons();
-
 // Cache DOM elements
-const elements = {
+const el = {
     mobileMenuBtn: document.getElementById("mobile-menu-btn"),
     mobileMenu: document.getElementById("mobile-menu"),
     menuIcon: document.getElementById("menu-icon"),
@@ -11,62 +8,50 @@ const elements = {
     bookingForm: document.getElementById("bookingForm"),
 };
 
-// Mobile menu toggle with icon update
-elements.mobileMenuBtn?.addEventListener("click", () => {
-    const isHidden = elements.mobileMenu?.classList.toggle("hidden");
-    updateMenuIcon(isHidden);
+// Update menu icon
+const updateMenuIcon = (isHidden) => {
+    if (!el.menuIcon) return;
+    el.menuIcon.innerHTML = "";
+    el.menuIcon.setAttribute("data-lucide", isHidden ? "menu" : "x");
+    lucide.createIcons();
+};
+
+// Mobile menu toggle
+el.mobileMenuBtn?.addEventListener("click", () => {
+    updateMenuIcon(el.mobileMenu?.classList.toggle("hidden"));
 });
 
-// Close menu when clicking navigation links
+// Close menu on link click
 document.querySelectorAll("#mobile-menu a").forEach((link) => {
     link.addEventListener("click", () => {
-        elements.mobileMenu?.classList.add("hidden");
+        el.mobileMenu?.classList.add("hidden");
         updateMenuIcon(true);
     });
 });
 
-// Update menu icon helper function
-function updateMenuIcon(isHidden) {
-    if (elements.menuIcon) {
-        elements.menuIcon.innerHTML = "";
-        elements.menuIcon.setAttribute("data-lucide", isHidden ? "menu" : "x");
-        lucide.createIcons();
-    }
-}
-
-// Scroll event handler (navbar + back to top)
+// Scroll handler
 window.addEventListener("scroll", () => {
-    const scrollY = window.pageYOffset;
+    const y = window.pageYOffset;
 
-    // Navbar scrolled state
-    if (scrollY > 100) {
-        elements.navbar?.classList.add("scrolled");
-    } else {
-        elements.navbar?.classList.remove("scrolled");
-    }
-
-    // Back to top button visibility
-    if (scrollY > 300) {
-        elements.backToTopBtn?.classList.remove("opacity-0", "invisible");
-    } else {
-        elements.backToTopBtn?.classList.add("opacity-0", "invisible");
-    }
+    el.navbar?.classList.toggle("scrolled", y > 100);
+    el.backToTopBtn?.classList.toggle("opacity-0", y <= 300);
+    el.backToTopBtn?.classList.toggle("invisible", y <= 300);
 });
 
-// Back to top click handler
-elements.backToTopBtn?.addEventListener("click", () => {
+// Back to top
+el.backToTopBtn?.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Form submission handler
-elements.bookingForm?.addEventListener("submit", (e) => {
+// Form submission
+el.bookingForm?.addEventListener("submit", (e) => {
     e.preventDefault();
     alert(
         "Cảm ơn bạn đã đặt xe! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.",
     );
 });
 
-// Intersection Observer for animations
+// Intersection Observer
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
@@ -82,14 +67,13 @@ const observer = new IntersectionObserver(
     },
 );
 
-// Observe fade-in elements
 document
     .querySelectorAll(".fade-in-up, .fade-in-left, .fade-in-right")
     .forEach((el) => {
         observer.observe(el);
     });
 
-// Smooth scrolling for anchor links
+// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
         e.preventDefault();
@@ -100,10 +84,11 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
                 top: target.offsetTop - 120,
                 behavior: "smooth",
             });
+            el.mobileMenu?.classList.add("hidden");
+            updateMenuIcon(true);
         }
-
-        // Close mobile menu and reset icon
-        elements.mobileMenu?.classList.add("hidden");
-        updateMenuIcon(true);
     });
 });
+
+// Initialize icons
+lucide.createIcons();
