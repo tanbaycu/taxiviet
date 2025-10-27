@@ -2,8 +2,6 @@
 
 /* === BASE STYLES === */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -135,7 +133,7 @@ a {
 
 /* === HERO SECTION === */
 #home {
-    padding-top: calc(42px + 10rem) !important;
+    padding-top: calc(42px + 10rem);
     z-index: 40;
 }
 
@@ -469,7 +467,7 @@ a {
 /* === RESPONSIVE - TABLET === */
 @media (max-width: 768px) {
     #home {
-        padding-top: calc(42px + 5rem) !important;
+        padding-top: calc(42px + 5rem);
     }
 
     .scroll-banner {
@@ -493,32 +491,32 @@ a {
         margin: 0 0.5rem;
     }
     .floating-header .px-4 {
-        padding-left: 0.75rem !important;
-        padding-right: 0.75rem !important;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
     }
     .floating-header h1 {
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
     }
     .floating-header p {
-        font-size: 0.625rem !important;
+        font-size: 0.625rem;
     }
 
     h1 {
-        font-size: 1.75rem !important;
+        font-size: 1.75rem;
         line-height: 1.1;
     }
     h2 {
-        font-size: 1.5rem !important;
+        font-size: 1.5rem;
     }
     h3 {
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
     }
 
     .glass-card {
-        padding: 1.25rem !important;
+        padding: 1.25rem;
     }
     .form-input {
-        padding: 0.875rem !important;
+        padding: 0.875rem;
         min-height: 44px;
     }
     .btn-primary,
@@ -547,48 +545,48 @@ a {
     }
 
     section {
-        padding: 3rem 0 !important;
+        padding: 3rem 0;
     }
     .max-w-7xl {
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .grid {
-        gap: 1rem !important;
+        gap: 1rem;
     }
     .md\:grid-cols-2,
     .lg\:grid-cols-3 {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
     }
     .lg\:col-span-2 {
-        grid-column: span 1 !important;
+        grid-column: span 1;
     }
 
     .text-lg {
-        font-size: 1rem !important;
+        font-size: 1rem;
     }
     .text-xl {
-        font-size: 1.125rem !important;
+        font-size: 1.125rem;
     }
     .text-2xl {
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
     }
 
     .space-y-6 {
-        gap: 1.5rem !important;
+        gap: 1.5rem;
     }
     footer .grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
     }
     .hidden.lg\:flex {
-        display: none !important;
+        display: none;
     }
 }
 
 /* === RESPONSIVE - MOBILE === */
 @media (max-width: 640px) {
     #home {
-        padding-top: calc(42px + 14rem) !important;
+        padding-top: calc(42px + 14rem);
     }
 
     .scroll-banner {
@@ -609,44 +607,44 @@ a {
     }
 
     h1 {
-        font-size: 1.5rem !important;
+        font-size: 1.5rem;
     }
     h2 {
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
     }
 
     .glass-card {
-        padding: 1rem !important;
+        padding: 1rem;
     }
 
     section {
-        padding: 2rem 0 !important;
+        padding: 2rem 0;
     }
     .max-w-7xl {
-        padding-left: 0.75rem !important;
-        padding-right: 0.75rem !important;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
     }
     .grid {
-        gap: 0.75rem !important;
+        gap: 0.75rem;
     }
     .space-y-6 {
-        gap: 1rem !important;
+        gap: 1rem;
     }
 
     .btn-primary,
     .btn-secondary {
-        padding: 0.75rem 1rem !important;
+        padding: 0.75rem 1rem;
         font-size: 0.9rem;
     }
     .form-input {
-        padding: 0.75rem !important;
+        padding: 0.75rem;
     }
 
     .flex.flex-col.sm\:flex-row {
-        flex-direction: column !important;
+        flex-direction: column;
     }
     .gap-6 {
-        gap: 1rem !important;
+        gap: 1rem;
     }
 }
 
