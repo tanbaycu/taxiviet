@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
-/* Base Styles */
+/* === BASE STYLES === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -15,17 +19,32 @@ body {
     overflow-x: hidden;
 }
 
-/* Enhanced scrolling banner with better styling */
+input,
+textarea,
+select {
+    font-size: 16px;
+}
+
+button,
+a {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* === SCROLLING BANNER === */
 .scroll-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 60;
     background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-    color: #000000;
+    color: #000;
     font-weight: 700;
-    font-size: 1rem;
-    padding: 12px 0;
+    font-size: 0.875rem;
+    padding: 10px 0;
     white-space: nowrap;
     overflow: hidden;
-    position: relative;
-    z-index: 30;
     box-shadow: 0 4px 20px rgba(251, 191, 36, 0.2);
 }
 
@@ -37,40 +56,29 @@ body {
 }
 
 .scroll-content span {
-    margin: 0 2rem;
-    font-size: 1.1rem;
+    margin: 0 1.5rem;
+    font-size: 0.9rem;
     letter-spacing: 0.5px;
 }
 
 .scroll-content .dot {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background: #000;
     border-radius: 50%;
-    margin: 0 2rem;
+    margin: 0 1.5rem;
     flex-shrink: 0;
 }
 
-@keyframes scrollLeft {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-/* Enhanced liquid glass effect for floating header */
+/* === FLOATING HEADER === */
 .floating-header {
     position: fixed;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 2rem);
-    max-width: 1280px;
-    z-index: 40;
-    margin: 0 1rem;
-    border-radius: 20px;
+    top: 42px;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    margin: 0 0.5rem;
+    border-radius: 16px;
     background: rgba(17, 24, 39, 0.4);
     backdrop-filter: blur(30px) saturate(180%);
     -webkit-backdrop-filter: blur(30px) saturate(180%);
@@ -90,7 +98,7 @@ body {
         inset 0 1px 1px rgba(255, 255, 255, 0.15);
 }
 
-/* Enhanced liquid glass morphism for all cards */
+/* === GLASS CARD === */
 .glass-card {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(25px) saturate(180%);
@@ -116,26 +124,32 @@ body {
     pointer-events: none;
 }
 
-.glass-card:hover {
+.glass-card:active {
     background: rgba(255, 255, 255, 0.12);
     border-color: rgba(255, 255, 255, 0.25);
     box-shadow:
         0 12px 48px rgba(0, 0, 0, 0.4),
         inset 0 1px 1px rgba(255, 255, 255, 0.2);
-    transform: translateY(-4px);
+    transform: scale(0.98);
 }
 
-/* Enhanced hero background with animated gradients and patterns */
+/* === HERO SECTION === */
+#home {
+    padding-top: calc(42px + 10rem) !important;
+    z-index: 40;
+}
+
 .hero-background {
     position: absolute;
     inset: 0;
     overflow: hidden;
+    z-index: 1;
 }
 
 .hero-gradient-1 {
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 250px;
+    height: 250px;
     background: radial-gradient(
         circle,
         rgba(251, 191, 36, 0.2) 0%,
@@ -148,8 +162,8 @@ body {
 
 .hero-gradient-2 {
     position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 300px;
+    height: 300px;
     background: radial-gradient(
         circle,
         rgba(251, 191, 36, 0.12) 0%,
@@ -161,29 +175,38 @@ body {
     filter: blur(60px);
 }
 
-/* Enhanced hero grid with liquid effect */
 .hero-grid {
     position: absolute;
     inset: 0;
     background-image:
         linear-gradient(rgba(251, 191, 36, 0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(251, 191, 36, 0.05) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background-size: 40px 40px;
     opacity: 0.5;
     animation: gridShift 20s ease-in-out infinite;
 }
 
-@keyframes gridShift {
-    0%,
-    100% {
-        opacity: 0.5;
-    }
-    50% {
-        opacity: 0.8;
-    }
+.hero-title-3d {
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.3),
+        0 4px 8px rgba(0, 0, 0, 0.2),
+        0 8px 16px rgba(0, 0, 0, 0.1),
+        0 0 20px rgba(251, 191, 36, 0.2);
+    filter: drop-shadow(0 4px 12px rgba(251, 191, 36, 0.15));
+    letter-spacing: -0.02em;
 }
 
-/* Enhanced section backgrounds with gradients and patterns */
+.hero-title-gradient {
+    animation: gradientShimmer 3s ease-in-out infinite;
+    background-size: 200% auto;
+}
+
+.relative.z-10 {
+    position: relative;
+    z-index: 2;
+}
+
+/* === SECTION BACKGROUNDS === */
 .section-bg-dark {
     background: linear-gradient(135deg, #0a0a0a 0%, #111827 50%, #0a0a0a 100%);
     position: relative;
@@ -234,17 +257,7 @@ body {
     animation: gradientShift 15s ease-in-out infinite;
 }
 
-@keyframes gradientShift {
-    0%,
-    100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.8;
-    }
-}
-
-/* Enhanced liquid glass form inputs */
+/* === FORMS === */
 .form-input {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -253,6 +266,7 @@ body {
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    font-size: 16px;
 }
 
 .form-input:focus {
@@ -270,7 +284,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* Enhanced liquid glass button styles */
+/* === BUTTONS === */
 .btn-primary {
     background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
     color: #000;
@@ -279,6 +293,7 @@ body {
     box-shadow: 0 8px 24px rgba(251, 191, 36, 0.3);
     position: relative;
     overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn-primary::before {
@@ -293,9 +308,9 @@ body {
     pointer-events: none;
 }
 
-.btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(251, 191, 36, 0.4);
+.btn-primary:active {
+    transform: scale(0.98);
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.3);
 }
 
 .btn-secondary {
@@ -305,24 +320,93 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-tap-highlight-color: transparent;
 }
 
-.btn-secondary:hover {
+.btn-secondary:active {
     background: #fbbf24;
     color: #000;
     border-color: #fbbf24;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(251, 191, 36, 0.3);
+    transform: scale(0.98);
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.3);
 }
 
-/* Animations */
+/* === SERVICE CARDS & NAVIGATION === */
+.service-card {
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.service-card:active {
+    transform: scale(0.98);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fbbf24;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:active::after {
+    transform: scaleX(1);
+}
+
+/* === ANIMATIONS === */
+@keyframes scrollLeft {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 @keyframes float {
     0%,
     100% {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateY(0) rotate(0);
     }
     50% {
         transform: translateY(-30px) rotate(5deg);
+    }
+}
+
+@keyframes gridShift {
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes gradientShift {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes gradientShimmer {
+    0%,
+    100% {
+        background-position: 0% center;
+    }
+    50% {
+        background-position: 100% center;
     }
 }
 
@@ -373,117 +457,205 @@ body {
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
 }
-
 .fade-in-left {
     opacity: 0;
     animation: fadeInLeft 0.8s ease-out forwards;
 }
-
 .fade-in-right {
     opacity: 0;
     animation: fadeInRight 0.8s ease-out forwards;
 }
 
-/* Service card hover effects */
-.service-card {
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.service-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 24px 56px rgba(0, 0, 0, 0.5);
-}
-
-/* Navigation */
-.nav-link {
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.nav-link::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #fbbf24;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1);
-}
-
-/* Enhanced mobile responsiveness with better spacing */
+/* === RESPONSIVE - TABLET === */
 @media (max-width: 768px) {
-    .floating-header {
-        width: calc(100% - 1rem);
-        margin: 0 0.5rem;
-        border-radius: 16px;
-        top: 55px;
+    #home {
+        padding-top: calc(42px + 5rem) !important;
     }
 
-    .scroll-content {
-        animation-duration: 20s;
+    .scroll-banner {
+        padding: 8px 0;
+        font-size: 0.75rem;
     }
-
     .scroll-content span {
-        font-size: 0.9rem;
-        margin: 0 1.5rem;
+        font-size: 0.75rem;
+        margin: 0 1rem;
+    }
+    .scroll-content .dot {
+        width: 5px;
+        height: 5px;
+        margin: 0 1rem;
     }
 
-    .scroll-content .dot {
-        margin: 0 1.5rem;
+    .floating-header {
+        top: 42px;
+        left: 0.5rem;
+        right: 0.5rem;
+        margin: 0 0.5rem;
+    }
+    .floating-header .px-4 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    .floating-header h1 {
+        font-size: 1.25rem !important;
+    }
+    .floating-header p {
+        font-size: 0.625rem !important;
     }
 
     h1 {
-        font-size: 2rem !important;
+        font-size: 1.75rem !important;
         line-height: 1.1;
     }
-
     h2 {
-        font-size: 1.75rem !important;
+        font-size: 1.5rem !important;
+    }
+    h3 {
+        font-size: 1.25rem !important;
     }
 
     .glass-card {
-        padding: 1.5rem !important;
+        padding: 1.25rem !important;
     }
-
     .form-input {
-        font-size: 16px;
-        padding: 1rem !important;
+        padding: 0.875rem !important;
+        min-height: 44px;
+    }
+    .btn-primary,
+    .btn-secondary {
+        min-height: 48px;
     }
 
     .hero-gradient-1 {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
+    }
+    .hero-gradient-2 {
+        width: 250px;
+        height: 250px;
+    }
+    .hero-grid {
+        background-size: 30px 30px;
     }
 
-    .hero-gradient-2 {
-        width: 400px;
-        height: 400px;
+    .hero-title-3d {
+        text-shadow:
+            0 1px 2px rgba(0, 0, 0, 0.3),
+            0 2px 4px rgba(0, 0, 0, 0.2),
+            0 4px 8px rgba(0, 0, 0, 0.1),
+            0 0 15px rgba(251, 191, 36, 0.15);
+    }
+
+    section {
+        padding: 3rem 0 !important;
+    }
+    .max-w-7xl {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .grid {
+        gap: 1rem !important;
+    }
+    .md\:grid-cols-2,
+    .lg\:grid-cols-3 {
+        grid-template-columns: 1fr !important;
+    }
+    .lg\:col-span-2 {
+        grid-column: span 1 !important;
+    }
+
+    .text-lg {
+        font-size: 1rem !important;
+    }
+    .text-xl {
+        font-size: 1.125rem !important;
+    }
+    .text-2xl {
+        font-size: 1.25rem !important;
+    }
+
+    .space-y-6 {
+        gap: 1.5rem !important;
+    }
+    footer .grid {
+        grid-template-columns: 1fr !important;
+    }
+    .hidden.lg\:flex {
+        display: none !important;
     }
 }
 
+/* === RESPONSIVE - MOBILE === */
 @media (max-width: 640px) {
+    #home {
+        padding-top: calc(42px + 14rem) !important;
+    }
+
     .scroll-banner {
-        padding: 8px 0;
+        padding: 6px 0;
     }
-
     .scroll-content span {
-        font-size: 0.8rem;
-        margin: 0 1rem;
+        font-size: 0.7rem;
+        margin: 0 0.75rem;
     }
-
     .scroll-content .dot {
-        width: 6px;
-        height: 6px;
-        margin: 0 1rem;
+        width: 4px;
+        height: 4px;
+        margin: 0 0.75rem;
     }
 
     .floating-header {
-        top: 50px;
+        top: 40px;
+    }
+
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    h2 {
+        font-size: 1.25rem !important;
+    }
+
+    .glass-card {
+        padding: 1rem !important;
+    }
+
+    section {
+        padding: 2rem 0 !important;
+    }
+    .max-w-7xl {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    .grid {
+        gap: 0.75rem !important;
+    }
+    .space-y-6 {
+        gap: 1rem !important;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.75rem 1rem !important;
+        font-size: 0.9rem;
+    }
+    .form-input {
+        padding: 0.75rem !important;
+    }
+
+    .flex.flex-col.sm\:flex-row {
+        flex-direction: column !important;
+    }
+    .gap-6 {
+        gap: 1rem !important;
+    }
+}
+
+/* === TOUCH DEVICES === */
+@media (hover: none) and (pointer: coarse) {
+    .glass-card:hover,
+    .service-card:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        transform: none;
     }
 }
