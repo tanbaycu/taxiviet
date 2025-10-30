@@ -108,9 +108,7 @@
               ></i>
             </div>
             <div>
-              <span
-                class="font-space text-xl font-bold tracking-tight text-white"
-              >
+              <span class="text-xl font-bold tracking-tight text-white">
                 TUẤN<span class="text-yellow-400">TAXI</span>
               </span>
               <p class="-mt-0.5 text-xs text-gray-400">Premium Service</p>
@@ -188,7 +186,7 @@
             class="mt-4 flex items-center space-x-2 rounded-full bg-yellow-400 px-4 py-3 font-medium text-gray-900"
           >
             <i data-lucide="phone" class="h-4 w-4"></i>
-            <span>0365 942 478</span>
+            <span>0365&nbsp;942&nbsp;478</span>
           </a>
         </div>
       </div>
@@ -199,11 +197,11 @@
       id="home"
       class="relative flex min-h-screen items-center justify-center overflow-hidden pt-44"
     >
-      <!-- Enhanced background -->
-      <div class="hero-background">
+      <!-- Decorative background (hidden from assistive tech) -->
+      <div class="hero-background" aria-hidden="true">
         <div class="hero-grid"></div>
-        <div class="hero-gradient-1" style="top: 10%; left: 5%"></div>
-        <div class="hero-gradient-2" style="bottom: 10%; right: 5%"></div>
+        <div class="hero-gradient-1"></div>
+        <div class="hero-gradient-2"></div>
       </div>
 
       <div
@@ -219,50 +217,64 @@
           </div>
 
           <h1
-            class="font-space mb-6 text-4xl leading-none font-black text-white md:text-6xl lg:text-7xl"
+            class="font-Space-Grotesk mb-6 text-4xl leading-none font-black text-white md:text-6xl lg:text-7xl"
           >
-            <span class="block">Dịch vụ taxi</span>
+            Dịch vụ taxi<br />
             <span
-              class="block bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
-              >hàng đầu</span
+              class="bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
             >
-            <span
-              class="mt-2 block text-3xl font-medium text-gray-300 md:text-4xl lg:text-5xl"
-              >Miền Tây</span
-            >
+              hàng đầu
+            </span>
+            <br />
+            <span class="text-gray-300 md:text-4xl lg:text-5xl">Miền Tây</span>
           </h1>
 
           <p
             class="mx-auto mb-12 max-w-4xl text-lg leading-relaxed text-gray-300 md:text-xl"
           >
             Kết nối Sài Gòn - Miền Tây với dịch vụ taxi chuyên nghiệp,
-            <span class="font-medium text-yellow-400"
-              >an toàn và tiện lợi 24/7</span
-            >
+            <span class="font-medium text-yellow-400">
+              an toàn và tiện lợi 24/7
+            </span>
           </p>
 
+          <!-- Call-to-action buttons -->
           <div
             class="mb-16 flex flex-col items-center justify-center gap-6 sm:flex-row"
           >
             <a
               href="#booking"
-              class="btn-primary inline-flex items-center space-x-3 rounded-full px-8 py-4 text-lg font-semibold shadow-lg"
+              class="btn-primary inline-flex items-center gap-3 rounded-full px-8 py-4 text-lg font-semibold shadow-lg focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:outline-none"
             >
-              <i data-lucide="calendar-plus" class="h-5 w-5"></i>
+              <i
+                data-lucide="calendar-plus"
+                class="h-5 w-5"
+                aria-hidden="true"
+              ></i>
               <span>Đặt Xe Ngay</span>
             </a>
+
             <a
               href="tel:0365942478"
-              class="btn-secondary inline-flex items-center space-x-3 rounded-full px-8 py-4 text-lg font-semibold"
+              class="btn-secondary inline-flex items-center gap-3 rounded-full px-8 py-4 text-lg font-semibold focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:outline-none"
+              aria-label="Gọi số 0365 942 478"
             >
-              <i data-lucide="phone-call" class="h-5 w-5"></i>
-              <span>0365 942 478</span>
+              <i
+                data-lucide="phone-call"
+                class="h-5 w-5"
+                aria-hidden="true"
+              ></i>
+              <span>0365&nbsp;942&nbsp;478</span>
             </a>
           </div>
 
-          <!-- Enhanced hero features grid with liquid glass cards -->
-          <div class="mx-auto mt-16 grid max-w-4xl gap-6 md:grid-cols-3">
-            <div
+          <!-- Hero feature cards -->
+          <section
+            class="mx-auto mt-16 grid max-w-4xl gap-6 md:grid-cols-3"
+            aria-label="Tính năng nổi bật"
+          >
+            <!-- Feature 1 -->
+            <article
               class="glass-card fade-in-up rounded-2xl p-6"
               style="animation-delay: 0.2s"
             >
@@ -272,46 +284,60 @@
                 <i
                   data-lucide="shield-check"
                   class="h-8 w-8 text-yellow-400"
+                  aria-hidden="true"
                 ></i>
               </div>
               <h3 class="mb-2 font-bold text-white">An Toàn Tuyệt Đối</h3>
               <p class="text-sm text-gray-300">
                 Xe kiểm định, tài xế chuyên nghiệp
               </p>
-            </div>
+            </article>
 
-            <div
+            <!-- Feature 2 -->
+            <article
               class="glass-card fade-in-up rounded-2xl p-6"
               style="animation-delay: 0.3s"
             >
               <div
                 class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-xl bg-blue-400/20"
               >
-                <i data-lucide="clock" class="h-8 w-8 text-blue-400"></i>
+                <i
+                  data-lucide="clock"
+                  class="h-8 w-8 text-blue-400"
+                  aria-hidden="true"
+                ></i>
               </div>
               <h3 class="mb-2 font-bold text-white">Đúng Giờ Cam Kết</h3>
               <p class="text-sm text-gray-300">Phục vụ 24/7 không ngừng</p>
-            </div>
+            </article>
 
-            <div
+            <!-- Feature 3 -->
+            <article
               class="glass-card fade-in-up rounded-2xl p-6"
               style="animation-delay: 0.4s"
             >
               <div
                 class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-xl bg-green-400/20"
               >
-                <i data-lucide="dollar-sign" class="h-8 w-8 text-green-400"></i>
+                <i
+                  data-lucide="dollar-sign"
+                  class="h-8 w-8 text-green-400"
+                  aria-hidden="true"
+                ></i>
               </div>
               <h3 class="mb-2 font-bold text-white">Giá Cả Minh Bạch</h3>
               <p class="text-sm text-gray-300">Không phát sinh thêm chi phí</p>
-            </div>
-          </div>
+            </article>
+          </section>
         </div>
       </div>
+    </section>
 
+    <!-- Enhanced services section with dynamic layout and sophisticated background -->
+    <section id="services" class="section-bg-dark relative py-20 lg:py-32">
       <!-- Scroll Indicator -->
       <div
-        class="absolute bottom-8 left-1/2 -translate-x-1/2 transform animate-bounce"
+        class="absolute top-12 left-1/2 -translate-x-1/2 transform animate-bounce"
       >
         <div
           class="flex h-10 w-6 justify-center rounded-full border-2 border-yellow-400"
@@ -321,10 +347,7 @@
           ></div>
         </div>
       </div>
-    </section>
 
-    <!-- Enhanced services section with dynamic layout and sophisticated background -->
-    <section id="services" class="section-bg-dark relative py-20 lg:py-32">
       <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="fade-in-up mb-20 text-center">
@@ -335,7 +358,7 @@
               🚗 Dịch vụ của chúng tôi
             </span>
           </div>
-          <h2 class="font-space mb-6 text-3xl font-bold text-white md:text-5xl">
+          <h2 class="mb-6 text-3xl font-bold text-white md:text-5xl">
             Đa dạng
             <span
               class="bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
@@ -580,7 +603,7 @@
               📅 Đặt xe ngay
             </span>
           </div>
-          <h2 class="font-space mb-6 text-3xl font-bold text-white md:text-5xl">
+          <h2 class="mb-6 text-3xl font-bold text-white md:text-5xl">
             Đặt xe
             <span
               class="bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
@@ -736,7 +759,7 @@
                   class="flex items-center justify-center space-x-2 rounded-xl bg-yellow-400 px-6 py-3 font-medium text-gray-900 transition-all hover:bg-yellow-500"
                 >
                   <i data-lucide="phone" class="h-4 w-4"></i>
-                  <span>0365 942 478</span>
+                  <span>0365&nbsp;942&nbsp;478</span>
                 </a>
                 <a
                   href="https://zalo.me/0365942478"
@@ -767,9 +790,7 @@
               </span>
             </div>
 
-            <h2
-              class="font-space mb-8 text-3xl font-bold text-white md:text-5xl"
-            >
+            <h2 class="mb-8 text-3xl font-bold text-white md:text-5xl">
               Về
               <span
                 class="bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
@@ -959,7 +980,7 @@
               📞 Liên hệ với chúng tôi
             </span>
           </div>
-          <h2 class="font-space mb-6 text-3xl font-bold text-white md:text-5xl">
+          <h2 class="mb-6 text-3xl font-bold text-white md:text-5xl">
             Liên hệ
             <span
               class="bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
@@ -992,7 +1013,7 @@
                     href="tel:0365942478"
                     class="text-2xl font-bold text-yellow-400 transition-colors hover:text-yellow-500"
                   >
-                    0365 942 478
+                    0365&nbsp;942&nbsp;478
                   </a>
                   <p class="mt-1 text-xs text-gray-400">Phục vụ 24/7</p>
                 </div>
@@ -1186,9 +1207,7 @@
                 <i data-lucide="car" class="h-8 w-8 text-gray-900"></i>
               </div>
               <div>
-                <h1
-                  class="font-space text-3xl font-bold tracking-tight text-white"
-                >
+                <h1 class="text-3xl font-bold tracking-tight text-white">
                   TUẤN<span class="text-yellow-400">TAXI</span>
                 </h1>
                 <p class="text-sm text-gray-400">Premium Taxi Service</p>
@@ -1296,7 +1315,7 @@
                 <a
                   href="tel:0365942478"
                   class="text-gray-300 transition-colors hover:text-yellow-400"
-                  >0365 942 478</a
+                  >0365&nbsp;942&nbsp;478</a
                 >
               </li>
               <li class="flex items-center space-x-3">

@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@theme {
+    --font-Space-Grotesk: "Space Grotesk", sans-serif;
+    --font-Inter: "Inter", system-ui, sans-serif;
+}
 
 /* === BASE STYLES === */
 :root {
@@ -10,7 +14,7 @@ html {
 }
 
 body {
-    font-family: "Inter", system-ui, sans-serif;
+    @apply font-Inter;
     background: #0a0a0a;
     color: #ffffff;
     line-height: 1.6;
@@ -105,71 +109,61 @@ select {
 }
 
 /* === HERO SECTION === */
-.hero-background {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-    z-index: 1;
-}
+@layer components {
+    .hero-background {
+        @apply absolute inset-0 z-10 overflow-hidden;
+    }
 
-.hero-gradient-1 {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    background: radial-gradient(
-        circle,
-        rgba(251, 191, 36, 0.2) 0%,
-        transparent 70%
-    );
-    border-radius: 50%;
-    animation: float 8s ease-in-out infinite;
-    filter: blur(50px);
-}
+    .hero-gradient-1 {
+        @apply absolute top-[10%] left-[5%] h-[500px] w-[500px] rounded-full;
+        background: radial-gradient(
+            circle,
+            rgba(251, 191, 36, 0.3) 0%,
+            /* brighter center */ transparent 70%
+        );
+        animation: float 4s ease-in-out infinite; /* was 8s → faster */
+        filter: blur(45px);
+    }
 
-.hero-gradient-2 {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(
-        circle,
-        rgba(251, 191, 36, 0.12) 0%,
-        transparent 70%
-    );
-    border-radius: 50%;
-    animation: float 10s ease-in-out infinite;
-    animation-delay: -3s;
-    filter: blur(60px);
-}
+    .hero-gradient-2 {
+        @apply absolute right-0 bottom-[10%] h-[600px] w-[600px] rounded-full;
+        background: radial-gradient(
+            circle,
+            rgba(251, 191, 36, 0.2) 0%,
+            /* brighter center */ transparent 70%
+        );
+        animation: float 5s ease-in-out infinite; /* was 10s → faster */
+        animation-delay: -1.5s; /* adjusted for smoother sync */
+        filter: blur(55px);
+    }
 
-.hero-grid {
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(rgba(251, 191, 36, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(251, 191, 36, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
-    opacity: 0.5;
-    animation: gridShift 20s ease-in-out infinite;
-}
+    .hero-grid {
+        @apply absolute inset-0 opacity-50;
+        background-image:
+            linear-gradient(rgba(251, 191, 36, 0.05) 1px, transparent 1px),
+            linear-gradient(
+                90deg,
+                rgba(251, 191, 36, 0.05) 1px,
+                transparent 1px
+            );
+        background-size: 40px 40px;
+        animation: gridShift 20s ease-in-out infinite;
+    }
 
-.hero-title-3d {
-    text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.3),
-        0 4px 8px rgba(0, 0, 0, 0.2),
-        0 8px 16px rgba(0, 0, 0, 0.1),
-        0 0 20px rgba(251, 191, 36, 0.2);
-    filter: drop-shadow(0 4px 12px rgba(251, 191, 36, 0.15));
-    letter-spacing: -0.02em;
-}
+    .hero-title-3d {
+        @apply tracking-[-0.02em];
+        text-shadow:
+            0 2px 4px rgba(0, 0, 0, 0.3),
+            0 4px 8px rgba(0, 0, 0, 0.2),
+            0 8px 16px rgba(0, 0, 0, 0.1),
+            0 0 20px rgba(251, 191, 36, 0.2);
+        filter: drop-shadow(0 4px 12px rgba(251, 191, 36, 0.15));
+    }
 
-.hero-title-gradient {
-    animation: gradientShimmer 3s ease-in-out infinite;
-    background-size: 200% auto;
-}
-
-.relative.z-10 {
-    position: relative;
-    z-index: 2;
+    .hero-title-gradient {
+        @apply animate-[gradientShimmer_3s_ease-in-out_infinite];
+        background-size: 200% auto;
+    }
 }
 
 /* === SECTION BACKGROUNDS === */
