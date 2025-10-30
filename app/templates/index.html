@@ -787,7 +787,6 @@
     </section>
 
     <!-- Enhanced about section with modern UI/UX -->
-    <!-- Section: About -->
     <section id="about" class="section-bg-dark relative py-20 lg:py-32">
       <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid items-center gap-16 lg:grid-cols-2">
@@ -1018,386 +1017,375 @@
     <!-- Enhanced contact section with modern UI/UX -->
     <section id="contact" class="section-bg-light relative py-20 lg:py-32">
       <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="fade-in-up mb-16 text-center">
-          <div class="mb-4">
+        <header class="animate-fade-in-up mb-16 text-center">
+          <p class="mb-4">
             <span
               class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-4 py-2 text-sm font-medium text-yellow-400"
+              aria-label="Liên hệ với chúng tôi"
             >
               📞 Liên hệ với chúng tôi
             </span>
-          </div>
+          </p>
+
           <h2 class="mb-6 text-3xl font-bold text-white md:text-5xl">
             Liên hệ
             <span
               class="bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
-              >với chúng tôi</span
             >
+              với chúng tôi
+            </span>
           </h2>
+
           <p
             class="mx-auto max-w-3xl text-lg leading-relaxed text-gray-300 md:text-xl"
           >
-            Sẵn sàng phục vụ bạn 24/7. Hãy liên hệ ngay để được tư vấn và đặt xe
+            Sẵn sàng phục vụ bạn 24/7. Hãy liên hệ ngay để được tư vấn và đặt
+            xe.
           </p>
-        </div>
+        </header>
 
-        <div class="grid gap-8 lg:grid-cols-3">
-          <!-- Enhanced Contact Cards -->
-          <div class="space-y-6 lg:col-span-1">
-            <!-- Phone -->
-            <div
-              class="glass-card fade-in-left group rounded-3xl p-8 hover:border-yellow-400/50"
-            >
-              <div class="flex items-center space-x-4">
-                <div
-                  class="rounded-2xl bg-linear-to-br from-yellow-400 to-yellow-500 p-4 shadow-lg transition-transform group-hover:scale-110"
+        <!-- Enhanced Contact Cards -->
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <!-- Phone -->
+          <article
+            class="glass-card animate-fade-in-left group rounded-3xl p-8 hover:border-yellow-400/50"
+            aria-labelledby="contact-hotline-title"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="rounded-2xl bg-linear-to-br from-yellow-400 to-yellow-500 p-4 shadow-lg transition-transform group-hover:scale-110"
+                aria-hidden="true"
+              >
+                <i data-lucide="phone" class="h-8 w-8 text-gray-900"></i>
+              </div>
+
+              <div>
+                <h3
+                  id="contact-hotline-title"
+                  class="mb-1 text-xl font-bold text-white"
                 >
-                  <i data-lucide="phone" class="h-8 w-8 text-gray-900"></i>
-                </div>
-                <div>
-                  <h3 class="mb-1 text-xl font-bold text-white">Hotline</h3>
-                  <a
-                    href="tel:0365942478"
-                    class="text-2xl font-bold text-yellow-400 transition-colors hover:text-yellow-500"
-                  >
-                    0365&nbsp;942&nbsp;478
-                  </a>
-                  <p class="mt-1 text-xs text-gray-400">Phục vụ 24/7</p>
-                </div>
+                  Hotline
+                </h3>
+                <a
+                  href="tel:0365942478"
+                  class="text-2xl font-bold text-yellow-400 transition-colors hover:text-yellow-500 focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-gray-900 focus:outline-none"
+                  aria-label="Gọi số hotline 0365 942 478"
+                >
+                  0365&nbsp;942&nbsp;478
+                </a>
+                <p class="mt-1 text-xs text-gray-400">Phục vụ 24/7</p>
               </div>
             </div>
+          </article>
 
-            <!-- Zalo -->
-            <div
-              class="glass-card fade-in-left group rounded-3xl p-8 hover:border-blue-400/50"
-              style="animation-delay: 0.1s"
+          <!-- Zalo -->
+          <article
+            class="group glass-card animate-fade-in-left rounded-3xl p-8 transition-all hover:border-blue-400/50 focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900 focus:outline-none"
+          >
+            <a
+              href="https://zalo.me/0365942478"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat Zalo với Tuấn Taxi"
             >
-              <div class="flex items-center space-x-4">
+              <div class="flex items-center gap-4">
                 <div
-                  class="rounded-2xl bg-linear-to-br from-blue-500 to-blue-600 p-4 transition-transform group-hover:scale-110"
+                  class="rounded-2xl bg-linear-to-br from-blue-400 to-blue-500 p-4 transition-transform group-hover:scale-110"
+                  aria-hidden="true"
                 >
                   <i
                     data-lucide="message-circle"
                     class="h-8 w-8 text-white"
                   ></i>
                 </div>
+
                 <div>
                   <h3 class="mb-1 text-xl font-bold text-white">Zalo</h3>
-                  <a
-                    href="https://zalo.me/0365942478"
-                    target="_blank"
-                    class="text-lg font-medium text-blue-400 transition-colors hover:text-blue-500"
+                  <p
+                    class="text-lg font-medium text-blue-400 transition-colors group-hover:text-blue-500"
                   >
                     Chat ngay
-                  </a>
+                  </p>
                   <p class="mt-1 text-xs text-gray-400">Phản hồi nhanh</p>
                 </div>
               </div>
-            </div>
+            </a>
+          </article>
 
-            <!-- Facebook -->
-            <div
-              class="glass-card fade-in-left group rounded-3xl p-8 hover:border-blue-600/50"
-              style="animation-delay: 0.2s"
-            >
-              <div class="flex items-center space-x-4">
-                <div
-                  class="rounded-2xl bg-linear-to-br from-blue-600 to-blue-700 p-4 transition-transform group-hover:scale-110"
-                >
-                  <i data-lucide="facebook" class="h-8 w-8 text-white"></i>
-                </div>
-                <div>
-                  <h3 class="mb-1 text-xl font-bold text-white">Facebook</h3>
-                  <a
-                    href="https://www.facebook.com/taxi.xanh.cai.be"
-                    target="_blank"
-                    class="text-lg font-medium text-blue-400 transition-colors hover:text-blue-500"
-                  >
-                    Taxi Xanh Cái Bè
-                  </a>
-                  <p class="mt-1 text-xs text-gray-400">Theo dõi tin tức</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Location -->
-            <div
-              class="glass-card fade-in-left group rounded-3xl p-8 hover:border-green-400/50"
-              style="animation-delay: 0.3s"
-            >
-              <div class="flex items-center space-x-4">
-                <div
-                  class="rounded-2xl bg-linear-to-br from-green-500 to-green-600 p-4 transition-transform group-hover:scale-110"
-                >
-                  <i data-lucide="map-pin" class="h-8 w-8 text-white"></i>
-                </div>
-                <div>
-                  <h3 class="mb-1 text-xl font-bold text-white">
-                    Khu vực phục vụ
-                  </h3>
-                  <p class="text-lg text-gray-300">Sài Gòn - Miền Tây</p>
-                  <p class="mt-1 text-xs text-gray-400">Toàn khu vực</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Enhanced Contact Form -->
-          <div
-            class="glass-card fade-in-right rounded-3xl p-8 lg:col-span-2 lg:p-12"
+          <!-- Facebook -->
+          <article
+            class="group glass-card animate-fade-in-left rounded-3xl p-8 [animation-delay:0.2s] [animation-fill-mode:both] hover:border-blue-600/50"
+            aria-label="Facebook page: Taxi Xanh Cái Bè"
           >
-            <div class="mb-10 text-center">
+            <a
+              href="https://www.facebook.com/taxi.xanh.cai.be"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-4 rounded-2xl transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
+            >
               <div
-                class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-yellow-400/20"
+                class="shrink-0 rounded-2xl bg-linear-to-br from-blue-500 to-blue-600 p-4 transition-transform group-hover:scale-110 motion-reduce:transform-none"
+                aria-hidden="true"
               >
-                <i data-lucide="mail" class="h-10 w-10 text-yellow-400"></i>
-              </div>
-              <h3 class="mb-4 text-2xl font-bold text-white md:text-3xl">
-                Gửi Tin Nhắn Cho Chúng Tôi
-              </h3>
-              <p class="text-gray-300">
-                Chúng tôi sẽ phản hồi trong thời gian sớm nhất
-              </p>
-            </div>
-
-            <form class="space-y-6" id="contactForm">
-              <div class="grid gap-6 md:grid-cols-2">
-                <div class="space-y-2">
-                  <label class="block text-sm font-medium text-gray-300">
-                    <i data-lucide="user" class="mr-2 inline h-4 w-4"></i>
-                    Họ và tên *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    class="form-input w-full rounded-xl px-4 py-4 text-white placeholder-gray-400 focus:outline-none"
-                    placeholder="Nhập họ tên"
-                  />
-                </div>
-                <div class="space-y-2">
-                  <label class="block text-sm font-medium text-gray-300">
-                    <i data-lucide="phone" class="mr-2 inline h-4 w-4"></i>
-                    Số điện thoại *
-                  </label>
-                  <input
-                    type="tel"
-                    required
-                    class="form-input w-full rounded-xl px-4 py-4 text-white placeholder-gray-400 focus:outline-none"
-                    placeholder="Nhập số điện thoại"
-                  />
-                </div>
+                <i
+                  data-lucide="facebook"
+                  class="h-8 w-8 text-white"
+                  aria-hidden="true"
+                ></i>
               </div>
 
-              <div class="space-y-2">
-                <label class="block text-sm font-medium text-gray-300">
-                  <i data-lucide="mail" class="mr-2 inline h-4 w-4"></i>
-                  Email
-                </label>
-                <input
-                  type="email"
-                  class="form-input w-full rounded-xl px-4 py-4 text-white placeholder-gray-400 focus:outline-none"
-                  placeholder="Nhập email (không bắt buộc)"
-                />
-              </div>
-
-              <div class="space-y-2">
-                <label class="block text-sm font-medium text-gray-300">
-                  <i data-lucide="tag" class="mr-2 inline h-4 w-4"></i>
-                  Chủ đề
-                </label>
-                <select
-                  class="form-input w-full rounded-xl px-4 py-4 text-white focus:outline-none"
+              <div>
+                <h3 class="mb-1 text-xl font-bold text-white">Facebook</h3>
+                <p
+                  class="text-lg font-medium text-blue-400 transition-colors group-hover:text-blue-500"
                 >
-                  <option value="booking">Đặt xe</option>
-                  <option value="price">Hỏi giá</option>
-                  <option value="complaint">Góp ý</option>
-                  <option value="other">Khác</option>
-                </select>
+                  Taxi Xanh Cái Bè
+                </p>
+                <p class="mt-1 text-xs text-gray-400">Theo dõi tin tức</p>
               </div>
+            </a>
+          </article>
 
-              <div class="space-y-2">
-                <label class="block text-sm font-medium text-gray-300">
-                  <i
-                    data-lucide="message-square"
-                    class="mr-2 inline h-4 w-4"
-                  ></i>
-                  Tin nhắn *
-                </label>
-                <textarea
-                  rows="6"
-                  required
-                  class="form-input w-full rounded-xl px-4 py-4 text-white placeholder-gray-400 focus:outline-none"
-                  placeholder="Nhập tin nhắn của bạn..."
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                class="btn-primary flex w-full items-center justify-center space-x-3 rounded-xl py-5 text-lg font-semibold text-gray-900 shadow-lg"
+          <!-- Location -->
+          <article
+            class="group glass-card animate-fade-in-left rounded-3xl p-8 [animation-delay:0.3s] [animation-fill-mode:both] hover:border-green-400/50"
+            aria-label="Khu vực phục vụ: Sài Gòn - Miền Tây"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="shrink-0 rounded-2xl bg-linear-to-br from-green-500 to-green-600 p-4 transition-transform group-hover:scale-110 motion-reduce:transform-none"
+                aria-hidden="true"
               >
-                <i data-lucide="send" class="h-5 w-5"></i>
-                <span>Gửi Tin Nhắn</span>
-              </button>
-            </form>
-          </div>
+                <i
+                  data-lucide="map-pin"
+                  class="h-8 w-8 text-white"
+                  aria-hidden="true"
+                ></i>
+              </div>
+
+              <div>
+                <h3 class="mb-1 text-xl font-bold text-white">
+                  Khu vực phục vụ
+                </h3>
+                <p class="text-lg text-gray-300">Sài Gòn - Miền Tây</p>
+                <p class="mt-1 text-xs text-gray-400">Toàn khu vực</p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <footer class="border-t border-gray-800 bg-gray-900 py-16">
+    <footer
+      class="border-t border-gray-800 bg-gray-900 py-16 text-gray-300"
+      aria-label="Website footer"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <!-- Company Info -->
-          <div class="lg:col-span-2">
-            <div class="mb-8 flex items-center space-x-4">
-              <div class="rounded-2xl bg-yellow-400 p-3 shadow-lg">
+          <section aria-labelledby="footer-company" class="lg:col-span-2">
+            <div class="mb-8 flex items-center gap-4">
+              <div
+                class="rounded-2xl bg-yellow-400 p-3 shadow-lg"
+                aria-hidden="true"
+              >
                 <i data-lucide="car" class="h-8 w-8 text-gray-900"></i>
               </div>
               <div>
-                <h1 class="text-3xl font-bold tracking-tight text-white">
+                <h2
+                  id="footer-company"
+                  class="text-3xl font-bold tracking-tight text-white"
+                >
                   TUẤN<span class="text-yellow-400">TAXI</span>
-                </h1>
+                </h2>
                 <p class="text-sm text-gray-400">Premium Taxi Service</p>
               </div>
             </div>
 
-            <p class="mb-8 text-lg leading-relaxed text-gray-300">
+            <p class="mb-8 max-w-prose text-lg leading-relaxed">
               Dịch vụ taxi liên tỉnh Sài Gòn - Miền Tây uy tín, chuyên nghiệp.
               Phục vụ 24/7 với đội ngũ tài xế kinh nghiệm và xe đời mới.
             </p>
 
-            <div class="flex space-x-4">
+            <nav
+              class="flex items-center gap-4"
+              aria-label="Social media links"
+            >
               <a
                 href="https://www.facebook.com/taxi.xanh.cai.be"
                 target="_blank"
-                class="group rounded-2xl bg-white/5 p-4 transition-all hover:bg-yellow-400/20"
+                rel="noopener noreferrer"
+                class="group rounded-2xl bg-white/5 p-4 transition-all hover:bg-yellow-400/20 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
+                aria-label="Facebook"
               >
                 <i
                   data-lucide="facebook"
                   class="h-6 w-6 text-yellow-400 transition-transform group-hover:scale-110"
+                  aria-hidden="true"
                 ></i>
               </a>
               <a
                 href="https://zalo.me/0365942478"
                 target="_blank"
-                class="group rounded-2xl bg-white/5 p-4 transition-all hover:bg-yellow-400/20"
+                rel="noopener noreferrer"
+                class="group rounded-2xl bg-white/5 p-4 transition-all hover:bg-yellow-400/20 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
+                aria-label="Zalo"
               >
                 <i
                   data-lucide="message-circle"
                   class="h-6 w-6 text-yellow-400 transition-transform group-hover:scale-110"
+                  aria-hidden="true"
                 ></i>
               </a>
               <a
                 href="tel:0365942478"
-                class="group rounded-2xl bg-white/5 p-4 transition-all hover:bg-yellow-400/20"
+                class="group rounded-2xl bg-white/5 p-4 transition-all hover:bg-yellow-400/20 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
+                aria-label="Call Tuấn Taxi"
               >
                 <i
                   data-lucide="phone"
                   class="h-6 w-6 text-yellow-400 transition-transform group-hover:scale-110"
+                  aria-hidden="true"
                 ></i>
               </a>
-            </div>
-          </div>
+            </nav>
+          </section>
 
           <!-- Quick Links -->
-          <div>
-            <h3 class="mb-8 text-xl font-bold text-white">Liên Kết Nhanh</h3>
+          <nav aria-labelledby="footer-links">
+            <h2 id="footer-links" class="mb-8 text-xl font-bold text-white">
+              Liên Kết Nhanh
+            </h2>
             <ul class="space-y-4">
               <li>
                 <a
                   href="#home"
-                  class="flex items-center space-x-2 text-gray-300 transition-colors hover:text-yellow-400"
+                  class="flex items-center gap-2 transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
                 >
-                  <i data-lucide="home" class="h-4 w-4"></i>
+                  <i data-lucide="home" class="h-4 w-4" aria-hidden="true"></i>
                   <span>Trang Chủ</span>
                 </a>
               </li>
               <li>
                 <a
                   href="#services"
-                  class="flex items-center space-x-2 text-gray-300 transition-colors hover:text-yellow-400"
+                  class="flex items-center gap-2 transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
                 >
-                  <i data-lucide="briefcase" class="h-4 w-4"></i>
+                  <i
+                    data-lucide="briefcase"
+                    class="h-4 w-4"
+                    aria-hidden="true"
+                  ></i>
                   <span>Dịch Vụ</span>
                 </a>
               </li>
               <li>
                 <a
                   href="#booking"
-                  class="flex items-center space-x-2 text-gray-300 transition-colors hover:text-yellow-400"
+                  class="flex items-center gap-2 transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
                 >
-                  <i data-lucide="calendar" class="h-4 w-4"></i>
+                  <i
+                    data-lucide="calendar"
+                    class="h-4 w-4"
+                    aria-hidden="true"
+                  ></i>
                   <span>Đặt Xe</span>
                 </a>
               </li>
               <li>
                 <a
                   href="#about"
-                  class="flex items-center space-x-2 text-gray-300 transition-colors hover:text-yellow-400"
+                  class="flex items-center gap-2 transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
                 >
-                  <i data-lucide="info" class="h-4 w-4"></i>
+                  <i data-lucide="info" class="h-4 w-4" aria-hidden="true"></i>
                   <span>Về Chúng Tôi</span>
                 </a>
               </li>
               <li>
                 <a
                   href="#contact"
-                  class="flex items-center space-x-2 text-gray-300 transition-colors hover:text-yellow-400"
+                  class="flex items-center gap-2 transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
                 >
-                  <i data-lucide="phone" class="h-4 w-4"></i>
+                  <i data-lucide="phone" class="h-4 w-4" aria-hidden="true"></i>
                   <span>Liên Hệ</span>
                 </a>
               </li>
             </ul>
-          </div>
+          </nav>
 
           <!-- Contact Info -->
-          <div>
-            <h3 class="mb-8 text-xl font-bold text-white">Thông Tin Liên Hệ</h3>
+          <address aria-labelledby="footer-contact" class="not-italic">
+            <h2 id="footer-contact" class="mb-8 text-xl font-bold text-white">
+              Thông Tin Liên Hệ
+            </h2>
             <ul class="space-y-4">
-              <li class="flex items-center space-x-3">
-                <div class="rounded-full bg-yellow-400/10 p-2">
+              <li class="flex items-center gap-3">
+                <div
+                  class="rounded-full bg-yellow-400/10 p-2"
+                  aria-hidden="true"
+                >
                   <i data-lucide="phone" class="h-4 w-4 text-yellow-400"></i>
                 </div>
                 <a
                   href="tel:0365942478"
-                  class="text-gray-300 transition-colors hover:text-yellow-400"
-                  >0365&nbsp;942&nbsp;478</a
+                  class="transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
                 >
+                  0365&nbsp;942&nbsp;478
+                </a>
               </li>
-              <li class="flex items-center space-x-3">
-                <div class="rounded-full bg-yellow-400/10 p-2">
+              <li class="flex items-center gap-3">
+                <div
+                  class="rounded-full bg-yellow-400/10 p-2"
+                  aria-hidden="true"
+                >
                   <i data-lucide="map-pin" class="h-4 w-4 text-yellow-400"></i>
                 </div>
-                <span class="text-gray-300">Khu vực Miền Tây</span>
+                <span>Khu vực Miền Tây</span>
               </li>
-              <li class="flex items-center space-x-3">
-                <div class="rounded-full bg-yellow-400/10 p-2">
+              <li class="flex items-center gap-3">
+                <div
+                  class="rounded-full bg-yellow-400/10 p-2"
+                  aria-hidden="true"
+                >
                   <i data-lucide="clock" class="h-4 w-4 text-yellow-400"></i>
                 </div>
-                <span class="text-gray-300">24/7 - Phục vụ không ngừng</span>
+                <span>24/7 - Phục vụ không ngừng</span>
               </li>
-              <li class="flex items-center space-x-3">
-                <div class="rounded-full bg-yellow-400/10 p-2">
+              <li class="flex items-center gap-3">
+                <div
+                  class="rounded-full bg-yellow-400/10 p-2"
+                  aria-hidden="true"
+                >
                   <i data-lucide="mail" class="h-4 w-4 text-yellow-400"></i>
                 </div>
-                <span class="text-gray-300">tuantaxi@gmail.com</span>
+                <a
+                  href="mailto:tuantaxi@gmail.com"
+                  class="transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
+                >
+                  tuantaxi@gmail.com
+                </a>
               </li>
             </ul>
-          </div>
+          </address>
         </div>
 
+        <!-- Footer bottom -->
         <div class="mt-16 border-t border-gray-800 pt-8">
           <div
-            class="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0"
+            class="flex flex-col items-center justify-between gap-4 md:flex-row"
           >
             <p class="text-center text-gray-400 md:text-left">
               © 2025 Tuấn Taxi - Taxi Xanh Cái Bè. Tất cả quyền được bảo lưu.
             </p>
-            <div class="flex items-center space-x-6 text-sm text-gray-400">
-              <a href="#" class="transition-colors hover:text-yellow-400"
+            <div class="flex items-center gap-6 text-sm text-gray-400">
+              <a
+                href="#"
+                class="transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
                 >Chính sách bảo mật</a
               >
-              <a href="#" class="transition-colors hover:text-yellow-400"
+              <a
+                href="#"
+                class="transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
                 >Điều khoản sử dụng</a
               >
             </div>
@@ -1409,9 +1397,11 @@
     <!-- Back to top button -->
     <button
       id="back-to-top"
-      class="invisible fixed right-8 bottom-8 z-40 transform rounded-full bg-yellow-400 p-4 text-gray-900 opacity-0 shadow-lg transition-all hover:scale-110 hover:bg-yellow-500"
+      type="button"
+      aria-label="Quay lại đầu trang"
+      class="invisible fixed right-8 bottom-8 z-40 rounded-full bg-yellow-400 p-4 text-gray-900 opacity-0 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-yellow-500 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none motion-reduce:transform-none"
     >
-      <i data-lucide="arrow-up" class="h-6 w-6"></i>
+      <i data-lucide="arrow-up" class="h-6 w-6" aria-hidden="true"></i>
     </button>
 
     <!-- Lucide Icons (load once at end of body for better performance) -->

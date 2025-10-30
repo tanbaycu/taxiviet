@@ -4,26 +4,26 @@ This project is a simple and modern website for a taxi service called "Tuấn Ta
 
 ## Features
 
-* **Online Booking:** Users can fill out a detailed form to book a taxi, specifying pickup and destination addresses, date, time, and car type.
-* **Quick Booking:** A simplified booking form is available on the homepage for faster booking.
-* **Contact Form:** Users can send messages to the taxi service provider through a contact form.
-* **Email Notifications:** All booking and contact requests are sent to the administrator's email address.
-* **Responsive Design:** The website is designed to work well on both desktop and mobile devices.
-* **Modern UI/UX:** The user interface is built with Tailwind CSS and includes animations and interactive elements for a smooth user experience.
+- **Online Booking:** Users can fill out a detailed form to book a taxi, specifying pickup and destination addresses, date, time, and car type.
+- **Quick Booking:** A simplified booking form is available on the homepage for faster booking.
+- **Contact Form:** Users can send messages to the taxi service provider through a contact form.
+- **Email Notifications:** All booking and contact requests are sent to the administrator's email address.
+- **Responsive Design:** The website is designed to work well on both desktop and mobile devices.
+- **Modern UI/UX:** The user interface is built with Tailwind CSS and includes animations and interactive elements for a smooth user experience.
 
 ## Technologies Used
 
-* **Frontend:**
-  * HTML5
-  * Tailwind CSS
-  * JavaScript
-* **Backend:**
-  * Python
-  * Flask (a micro web framework for Python)
-  * Flask-Mail (for sending emails)
-* **Deployment:**
-  * Vercel
-  * Gunicorn (as a WSGI HTTP server)
+- **Frontend:**
+  - HTML5
+  - Tailwind CSS
+  - JavaScript
+- **Backend:**
+  - Python
+  - Flask (a micro web framework for Python)
+  - Flask-Mail (for sending emails)
+- **Deployment:**
+  - Vercel
+  - Gunicorn (as a WSGI HTTP server)
 
 ## Sample Project Structure
 
@@ -81,8 +81,7 @@ To run this project locally, you will need to have Python and `pip` installed.
     ```
 
 4. **Configure environment variables:**
-
-    The application uses `flask-mail` to send emails and requires environment variables for configuration. Create a `.env` file in the root of the project and add the following variables with your SMTP server details:
+   Create a `.env` file and add:
 
     ```env
     MAIL_SERVER=smtp.gmail.com
@@ -104,8 +103,30 @@ To run this project locally, you will need to have Python and `pip` installed.
     python main.py
     ```
 
-    The application will be available at `http://127.0.0.1:5000`.
+    Visit `http://127.0.0.1:5000`.
 
 ## Deployment
 
-This project is configured for deployment on [Vercel](https://vercel.com/). The `vercel.json` file contains the necessary configuration to deploy the Flask application. When deploying to Vercel, make sure to set the environment variables for the email configuration in the Vercel project settings.
+This project is configured for deployment on [Vercel](https://vercel.com/).
+Set environment variables for email configuration in Vercel settings.
+
+---
+
+## 📱 Responsive Design Breakpoints
+
+This project follows **mobile-first design**, meaning styles start from mobile (base) and scale up using Tailwind’s responsive prefixes.
+
+| Breakpoint | Prefix   | Min Width | Common Device Range          |
+| ---------- | -------- | --------- | ---------------------------- |
+| **Base**   | _(none)_ | 0px       | Small phones (320–375px)     |
+| **sm**     | `sm:`    | 640px     | Larger phones, small tablets |
+| **md**     | `md:`    | 768px     | Tablets, small laptops       |
+| **lg**     | `lg:`    | 1024px    | Laptops, desktops            |
+| **xl**     | `xl:`    | 1280px    | Large desktops               |
+| **2xl**    | `2xl:`   | 1536px    | Very large screens           |
+
+**Tip:**
+
+- Start designing for **mobile (320-375px)**.
+- Gradually enhance layout using these breakpoints.
+- Keep base styles lightweight and readable.
