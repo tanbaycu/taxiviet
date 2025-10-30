@@ -55,7 +55,7 @@ select {
 
     /* Floating Header */
     .floating-header {
-        @apply fixed top-[calc(var(--scrolling-banner-h)+10px)] right-0 left-0 z-50 mx-auto max-w-5xl rounded-2xl border border-white/15 shadow-lg transition-all duration-300 ease-in-out;
+        @apply fixed top-[calc(var(--scrolling-banner-h)+10px)] right-0 left-0 z-50 mx-[5px] rounded-2xl border border-white/15 shadow-lg transition-all duration-300 ease-in-out md:mx-auto md:max-w-5xl;
         background: rgba(17, 24, 39, 0.4);
         backdrop-filter: blur(30px) saturate(180%);
     }
@@ -388,9 +388,6 @@ select {
 /* === RESPONSIVE === */
 
 @media (max-width: 640px) {
-    #home {
-        padding-top: calc(42px + 14rem);
-    }
     .scrolling-banner {
         padding: 6px 0;
     }
@@ -423,9 +420,6 @@ select {
 }
 
 @media (max-width: 768px) {
-    #home {
-        padding-top: calc(42px + 5rem);
-    }
     .scrolling-banner {
         padding: 8px 0;
         font-size: 0.75rem;
@@ -437,18 +431,6 @@ select {
     .scroll-content .dot {
         width: 5px;
         height: 5px;
-    }
-    .floating-header {
-        top: 42px;
-        margin: 0 0.5rem;
-        left: 0.5rem;
-        right: 0.5rem;
-    }
-    .floating-header h1 {
-        font-size: 1.25rem;
-    }
-    .floating-header p {
-        font-size: 0.625rem;
     }
     h1 {
         font-size: 1.75rem;
