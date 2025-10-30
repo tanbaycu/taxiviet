@@ -98,7 +98,10 @@ To run this project locally, you will need to have Python and `pip` installed.
 
     ```bash
     npx tailwindcss -i ./app/static/css/input.css -o ./app/static/css/output.css --content "./app/templates/**/*.html" --watch
-    python app.py
+    ```
+
+    ```bash
+    python main.py
     ```
 
     The application will be available at `http://127.0.0.1:5000`.
