@@ -49,7 +49,7 @@ select {
 /* === FLOATING HEADER === */
 @layer components {
     .floating-header {
-        @apply fixed top-[calc(var(--scrolling-banner-h)+10px)] right-0 left-0 z-50 mx-2.5 rounded-2xl border border-white/15 shadow-lg transition-all duration-300 ease-in-out;
+        @apply fixed top-[calc(var(--scrolling-banner-h)+10px)] right-0 left-0 z-50 mx-auto max-w-5xl rounded-2xl border border-white/15 shadow-lg transition-all duration-300 ease-in-out;
         background: rgba(17, 24, 39, 0.4);
         backdrop-filter: blur(30px) saturate(180%);
         -webkit-backdrop-filter: blur(30px) saturate(180%);
@@ -105,11 +105,6 @@ select {
 }
 
 /* === HERO SECTION === */
-#home {
-    padding-top: calc(42px + 10rem);
-    z-index: 40;
-}
-
 .hero-background {
     position: absolute;
     inset: 0;
