@@ -721,72 +721,68 @@
     <!-- Enhanced booking section with sophisticated background -->
     <section id="booking" class="section-bg-light relative py-20 lg:py-32">
       <div class="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <!-- Section Header -->
-        <div class="fade-in-up mb-16 text-center">
-          <div class="mb-4">
+        <!-- Section: Booking Header -->
+        <header class="animate-fade-in-up mb-16 text-center">
+          <p class="mb-4">
             <span
               class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-4 py-2 text-sm font-medium text-yellow-400"
+              aria-label="Đặt xe ngay"
             >
               📅 Đặt xe ngay
             </span>
-          </div>
-          <h2 class="mb-6 text-3xl font-bold text-white md:text-5xl">
+          </p>
+
+          <h2
+            class="font-Space-Grotesk mb-6 text-3xl font-bold text-white md:text-5xl"
+          >
             Đặt xe
             <span
               class="bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
-              >ngay bây giờ</span
             >
+              ngay bây giờ
+            </span>
           </h2>
-          <p
-            class="mx-auto max-w-3xl text-lg leading-relaxed text-gray-300 md:text-xl"
-          >
-            Điền thông tin bên dưới hoặc gọi trực tiếp hotline để được hỗ trợ
-            nhanh nhất
+
+          <p class="mx-auto max-w-3xl text-lg text-gray-300 md:text-xl">
+            Liên hệ qua Zalo hoặc gọi hotline để được hỗ trợ nhanh nhất.
           </p>
-        </div>
+        </header>
 
-        <!-- Enhanced booking form -->
-        <div
-          class="glass-card fade-in-up mx-auto max-w-2xl rounded-3xl p-6 lg:p-12"
+        <!-- Quick Contact Section -->
+        <section
+          aria-labelledby="contact-title"
+          class="flex flex-col items-center justify-center gap-6 sm:flex-row"
         >
-          <div class="mb-8 flex items-center space-x-3">
-            <div
-              class="flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-400/20"
-            >
-              <i
-                data-lucide="calendar-plus"
-                class="h-6 w-6 text-yellow-400"
-              ></i>
-            </div>
-            <h3 class="text-xl font-bold text-white md:text-2xl">
-              Thông Tin Đặt Xe
-            </h3>
-          </div>
+          <h2 id="contact-title" class="sr-only">Quick Contact Options</h2>
 
-          <!-- Quick contact info -->
-          <div class="mt-8 border-t border-gray-700 pt-6">
-            <div class="text-center">
-              <p class="mb-4 text-gray-400">Hoặc liên hệ trực tiếp:</p>
-              <div class="flex flex-col justify-center gap-4 sm:flex-row">
-                <a
-                  href="tel:0365942478"
-                  class="flex items-center justify-center space-x-2 rounded-xl bg-yellow-400 px-6 py-3 font-medium text-gray-900 transition-all hover:bg-yellow-500"
-                >
-                  <i data-lucide="phone" class="h-4 w-4"></i>
-                  <span>0365&nbsp;942&nbsp;478</span>
-                </a>
-                <a
-                  href="https://zalo.me/0365942478"
-                  target="_blank"
-                  class="flex items-center justify-center space-x-2 rounded-xl bg-blue-500 px-6 py-3 font-medium text-white transition-all hover:bg-blue-600"
-                >
-                  <i data-lucide="message-circle" class="h-4 w-4"></i>
-                  <span>Chat Zalo</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+          <a
+            href="https://zalo.me/0365942478"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-3 rounded-2xl bg-blue-500 px-9 py-4 text-xl font-semibold text-white transition-colors hover:bg-blue-600 focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:outline-none"
+            aria-label="Chat via Zalo"
+          >
+            <i
+              data-lucide="message-circle"
+              class="h-6 w-6"
+              aria-hidden="true"
+            ></i>
+            <span>Chat Zalo</span>
+          </a>
+
+          <span class="text-lg text-gray-300 md:text-xl" aria-hidden="true"
+            >Hoặc</span
+          >
+
+          <a
+            href="tel:0365942478"
+            class="inline-flex items-center gap-3 rounded-2xl bg-yellow-400 px-9 py-4 text-xl font-semibold text-gray-900 transition-colors hover:bg-yellow-500 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:outline-none"
+            aria-label="Call phone number 0365 942 478"
+          >
+            <i data-lucide="phone" class="h-6 w-6" aria-hidden="true"></i>
+            <span>0365&nbsp;942&nbsp;478</span>
+          </a>
+        </section>
       </div>
     </section>
 
