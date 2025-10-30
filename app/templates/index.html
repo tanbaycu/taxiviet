@@ -787,108 +787,130 @@
     </section>
 
     <!-- Enhanced about section with modern UI/UX -->
+    <!-- Section: About -->
     <section id="about" class="section-bg-dark relative py-20 lg:py-32">
       <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid items-center gap-16 lg:grid-cols-2">
-          <!-- Content -->
-          <div class="fade-in-left">
-            <div class="mb-6">
-              <span
-                class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-4 py-2 text-sm font-medium text-yellow-400"
-              >
-                ℹ️ Về chúng tôi
-              </span>
-            </div>
+          <!-- About Content -->
+          <article class="animate-fade-in-left">
+            <header class="mb-6">
+              <p>
+                <span
+                  class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-4 py-2 text-sm font-medium text-yellow-400"
+                  aria-label="Về chúng tôi"
+                >
+                  ℹ️ Về chúng tôi
+                </span>
+              </p>
+            </header>
 
             <h2 class="mb-8 text-3xl font-bold text-white md:text-5xl">
               Về
               <span
                 class="bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
-                >Tuấn Taxi</span
               >
+                Tuấn Taxi
+              </span>
             </h2>
 
             <div class="space-y-6 text-lg leading-relaxed text-gray-300">
               <p>
                 Với nhiều năm kinh nghiệm trong lĩnh vực vận tải hành khách,
-                <span class="font-semibold text-yellow-400"
-                  >Tuấn Taxi (Taxi Xanh Cái Bè)</span
+                <strong class="text-yellow-400"
+                  >Tuấn Taxi (Taxi Xanh Cái Bè)</strong
                 >
                 đã trở thành thương hiệu taxi uy tín hàng đầu tại khu vực Miền
                 Tây.
               </p>
 
               <p>
-                Chúng tôi chuyên cung cấp dịch vụ taxi liên tỉnh Sài Gòn - Miền
+                Chúng tôi chuyên cung cấp dịch vụ taxi liên tỉnh Sài Gòn – Miền
                 Tây với
-                <span class="font-semibold text-yellow-400"
-                  >đội ngũ tài xế chuyên nghiệp</span
+                <strong class="text-yellow-400"
+                  >đội ngũ tài xế chuyên nghiệp</strong
                 >, xe đời mới, máy lạnh và cam kết phục vụ khách hàng 24/7.
               </p>
 
               <p>
                 Sứ mệnh của chúng tôi là mang đến cho khách hàng những chuyến đi
-                <span class="font-semibold text-yellow-400"
-                  >an toàn, tiện lợi và tiết kiệm</span
+                <strong class="text-yellow-400"
+                  >an toàn, tiện lợi và tiết kiệm</strong
                 >, kết nối mọi người với những điểm đến yêu thích trong khu vực
                 Miền Tây.
               </p>
             </div>
 
-            <!-- Enhanced Features -->
-            <div class="mt-12 grid gap-6 md:grid-cols-2">
-              <div
-                class="flex items-center space-x-4 rounded-xl border border-gray-700 bg-gray-800 p-4 transition-all hover:border-yellow-400/50"
+            <!-- Key Features -->
+            <ul
+              class="mt-12 grid gap-6 md:grid-cols-2"
+              aria-label="Tính năng nổi bật"
+            >
+              <li
+                class="flex items-center gap-4 rounded-xl border border-gray-700 bg-gray-800 p-4 transition-all hover:border-yellow-400/50"
               >
                 <div class="rounded-full bg-yellow-400/20 p-3">
                   <i
                     data-lucide="shield-check"
                     class="h-6 w-6 text-yellow-400"
+                    aria-hidden="true"
                   ></i>
                 </div>
                 <span class="font-medium text-white">An toàn tuyệt đối</span>
-              </div>
-              <div
-                class="flex items-center space-x-4 rounded-xl border border-gray-700 bg-gray-800 p-4 transition-all hover:border-yellow-400/50"
+              </li>
+
+              <li
+                class="flex items-center gap-4 rounded-xl border border-gray-700 bg-gray-800 p-4 transition-all hover:border-yellow-400/50"
               >
                 <div class="rounded-full bg-yellow-400/20 p-3">
-                  <i data-lucide="clock" class="h-6 w-6 text-yellow-400"></i>
+                  <i
+                    data-lucide="clock"
+                    class="h-6 w-6 text-yellow-400"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <span class="font-medium text-white">Đúng giờ cam kết</span>
-              </div>
-              <div
-                class="flex items-center space-x-4 rounded-xl border border-gray-700 bg-gray-800 p-4 transition-all hover:border-yellow-400/50"
+              </li>
+
+              <li
+                class="flex items-center gap-4 rounded-xl border border-gray-700 bg-gray-800 p-4 transition-all hover:border-yellow-400/50"
               >
                 <div class="rounded-full bg-yellow-400/20 p-3">
                   <i
                     data-lucide="dollar-sign"
                     class="h-6 w-6 text-yellow-400"
+                    aria-hidden="true"
                   ></i>
                 </div>
                 <span class="font-medium text-white">Giá cả minh bạch</span>
-              </div>
-              <div
-                class="flex items-center space-x-4 rounded-xl border border-gray-700 bg-gray-800 p-4 transition-all hover:border-yellow-400/50"
+              </li>
+
+              <li
+                class="flex items-center gap-4 rounded-xl border border-gray-700 bg-gray-800 p-4 transition-all hover:border-yellow-400/50"
               >
                 <div class="rounded-full bg-yellow-400/20 p-3">
                   <i
                     data-lucide="headphones"
                     class="h-6 w-6 text-yellow-400"
+                    aria-hidden="true"
                   ></i>
                 </div>
                 <span class="font-medium text-white">Hỗ trợ 24/7</span>
-              </div>
-            </div>
-          </div>
+              </li>
+            </ul>
+          </article>
 
-          <!-- Right side commitment section -->
-          <div class="fade-in-right">
+          <!-- Commitment Section -->
+          <aside class="animate-fade-in-right">
             <div class="glass-card rounded-3xl p-8 lg:p-12">
               <div class="mb-10 text-center">
                 <div
                   class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-yellow-400/20"
                 >
-                  <i data-lucide="award" class="h-10 w-10 text-yellow-400"></i>
+                  <i
+                    data-lucide="award"
+                    class="h-10 w-10 text-yellow-400"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <h3 class="mb-4 text-2xl font-bold text-white md:text-3xl">
                   Cam kết Chất Lượng
@@ -896,39 +918,46 @@
                 <p class="text-gray-300">Những giá trị cốt lõi của chúng tôi</p>
               </div>
 
-              <div class="space-y-6">
+              <section aria-labelledby="commitments-title" class="space-y-6">
                 <div
                   class="rounded-2xl border border-gray-700 bg-gray-800 p-6 transition-all hover:border-yellow-400/50"
                 >
-                  <h4 class="mb-4 text-lg font-bold text-yellow-400">
+                  <h4
+                    id="commitments-title"
+                    class="mb-4 text-lg font-bold text-yellow-400"
+                  >
                     Cam kết của chúng tôi:
                   </h4>
                   <ul class="space-y-3 text-sm text-gray-300">
-                    <li class="flex items-center space-x-3">
+                    <li class="flex items-center gap-3">
                       <i
                         data-lucide="check-circle"
                         class="h-5 w-5 text-yellow-400"
+                        aria-hidden="true"
                       ></i>
                       <span>Xe đời mới, máy lạnh, sạch sẽ</span>
                     </li>
-                    <li class="flex items-center space-x-3">
+                    <li class="flex items-center gap-3">
                       <i
                         data-lucide="check-circle"
                         class="h-5 w-5 text-yellow-400"
+                        aria-hidden="true"
                       ></i>
                       <span>Tài xế kinh nghiệm, lịch sự</span>
                     </li>
-                    <li class="flex items-center space-x-3">
+                    <li class="flex items-center gap-3">
                       <i
                         data-lucide="check-circle"
                         class="h-5 w-5 text-yellow-400"
+                        aria-hidden="true"
                       ></i>
                       <span>Giá cả cạnh tranh, minh bạch</span>
                     </li>
-                    <li class="flex items-center space-x-3">
+                    <li class="flex items-center gap-3">
                       <i
                         data-lucide="check-circle"
                         class="h-5 w-5 text-yellow-400"
+                        aria-hidden="true"
                       ></i>
                       <span>Hỗ trợ khách hàng 24/7</span>
                     </li>
@@ -941,40 +970,47 @@
                   <h4 class="mb-4 text-lg font-bold text-blue-400">
                     Khu vực phục vụ:
                   </h4>
-                  <div class="grid grid-cols-2 gap-3 text-sm text-gray-300">
-                    <div class="flex items-center space-x-2">
+                  <ul
+                    class="grid grid-cols-2 gap-3 text-sm text-gray-300"
+                    aria-label="Khu vực phục vụ"
+                  >
+                    <li class="flex items-center gap-2">
                       <i
                         data-lucide="map-pin"
                         class="h-4 w-4 text-blue-400"
+                        aria-hidden="true"
                       ></i>
-                      <span>Sài Gòn - Cái Bè</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
+                      <span>Sài Gòn – Cái Bè</span>
+                    </li>
+                    <li class="flex items-center gap-2">
                       <i
                         data-lucide="map-pin"
                         class="h-4 w-4 text-blue-400"
+                        aria-hidden="true"
                       ></i>
-                      <span>Sài Gòn - Mỹ Tho</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
+                      <span>Sài Gòn – Mỹ Tho</span>
+                    </li>
+                    <li class="flex items-center gap-2">
                       <i
                         data-lucide="map-pin"
                         class="h-4 w-4 text-blue-400"
+                        aria-hidden="true"
                       ></i>
-                      <span>Sài Gòn - Cần Thơ</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
+                      <span>Sài Gòn – Cần Thơ</span>
+                    </li>
+                    <li class="flex items-center gap-2">
                       <i
                         data-lucide="map-pin"
                         class="h-4 w-4 text-blue-400"
+                        aria-hidden="true"
                       ></i>
-                      <span>Sài Gòn - An Giang</span>
-                    </div>
-                  </div>
+                      <span>Sài Gòn – An Giang</span>
+                    </li>
+                  </ul>
                 </div>
-              </div>
+              </section>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
