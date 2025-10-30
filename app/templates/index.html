@@ -270,7 +270,7 @@
 
           <!-- Hero feature cards -->
           <section
-            class="mx-auto mt-16 grid max-w-4xl gap-6 md:grid-cols-3"
+            class="mx-auto mt-16 mb-32 grid max-w-4xl gap-6 md:grid-cols-3"
             aria-label="Tính năng nổi bật"
           >
             <!-- Feature 1 -->
@@ -331,13 +331,9 @@
           </section>
         </div>
       </div>
-    </section>
-
-    <!-- Enhanced services section with dynamic layout and sophisticated background -->
-    <section id="services" class="section-bg-dark relative py-20 lg:py-32">
       <!-- Scroll Indicator -->
       <div
-        class="absolute top-12 left-1/2 -translate-x-1/2 animate-bounce"
+        class="absolute bottom-11 left-1/2 -translate-x-1/2 animate-bounce"
         aria-hidden="true"
       >
         <div
@@ -348,246 +344,376 @@
           ></div>
         </div>
       </div>
+    </section>
 
+    <!-- Enhanced services section with dynamic layout and sophisticated background -->
+    <section id="services" class="section-bg-dark relative py-20 lg:py-32">
       <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="fade-in-up mb-20 text-center">
-          <div class="mb-4">
-            <span
-              class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-4 py-2 text-sm font-medium text-yellow-400"
-            >
-              🚗 Dịch vụ của chúng tôi
-            </span>
-          </div>
-          <h2 class="mb-6 text-3xl font-bold text-white md:text-5xl">
+        <section class="fade-in-up mb-16 text-center">
+          <span
+            class="mb-4 inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-4 py-2 text-sm font-medium text-yellow-400"
+          >
+            🚗 Dịch vụ của chúng tôi
+          </span>
+
+          <h2
+            class="font-Space-Grotesk mb-6 text-3xl font-bold text-white md:text-5xl"
+          >
             Đa dạng
             <span
               class="bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
-              >dịch vụ</span
             >
+              dịch vụ
+            </span>
           </h2>
+
           <p
             class="mx-auto max-w-3xl text-lg leading-relaxed text-gray-300 md:text-xl"
           >
             Phù hợp với mọi nhu cầu di chuyển của bạn từ cá nhân đến doanh
             nghiệp
           </p>
-        </div>
+        </section>
 
         <!-- Dynamic services grid with staggered layout -->
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <!-- Service 1 -->
-          <div
-            class="service-card glass-card fade-in-up group rounded-3xl p-8"
-            style="animation-delay: 0.1s"
+          <article
+            class="service-card glass-card fade-in-up group rounded-3xl p-8 [animation-delay:0.1s]"
+            aria-labelledby="interprovincial-taxi-title"
           >
             <div
               class="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-linear-to-br from-yellow-400/20 to-yellow-400/10 transition-transform group-hover:scale-110"
+              role="presentation"
             >
-              <i data-lucide="map-pin" class="h-10 w-10 text-yellow-400"></i>
+              <i
+                data-lucide="map-pin"
+                class="h-10 w-10 text-yellow-400"
+                aria-hidden="true"
+              ></i>
             </div>
+
             <h3
+              id="interprovincial-taxi-title"
               class="mb-4 text-2xl font-bold text-white transition-colors group-hover:text-yellow-400"
             >
               Taxi Liên Tỉnh
             </h3>
+
             <p class="mb-6 leading-relaxed text-gray-300">
               Dịch vụ taxi liên tỉnh Sài Gòn - Miền Tây, đưa đón tận nơi, giá cả
               hợp lý và minh bạch.
             </p>
-            <ul class="space-y-3 text-sm text-gray-400">
+
+            <ul
+              class="space-y-3 text-sm text-gray-400"
+              aria-label="Tính năng dịch vụ"
+            >
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-yellow-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-yellow-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Đưa đón tận nhà</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-yellow-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-yellow-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Giá cố định, không phát sinh</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-yellow-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-yellow-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Xe đời mới, máy lạnh</span>
               </li>
             </ul>
-          </div>
+          </article>
 
           <!-- Service 2 -->
-          <div
-            class="service-card glass-card fade-in-up group rounded-3xl p-8"
-            style="animation-delay: 0.2s"
+          <article
+            class="service-card glass-card fade-in-up group rounded-3xl p-8 [animation-delay:0.2s]"
+            aria-labelledby="taxi-247-title"
           >
             <div
               class="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-linear-to-br from-blue-400/20 to-blue-400/10 transition-transform group-hover:scale-110"
+              role="presentation"
             >
-              <i data-lucide="clock" class="h-10 w-10 text-blue-400"></i>
+              <i
+                data-lucide="clock"
+                class="h-10 w-10 text-blue-400"
+                aria-hidden="true"
+              ></i>
             </div>
+
             <h3
+              id="taxi-247-title"
               class="mb-4 text-2xl font-bold text-white transition-colors group-hover:text-blue-400"
             >
               Taxi 24/7
             </h3>
+
             <p class="mb-6 leading-relaxed text-gray-300">
               Phục vụ khách hàng 24/7, sẵn sàng đáp ứng mọi nhu cầu di chuyển
               bất kể ngày đêm.
             </p>
-            <ul class="space-y-3 text-sm text-gray-400">
+
+            <ul
+              class="space-y-3 text-sm text-gray-400"
+              aria-label="Tính năng dịch vụ"
+            >
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-blue-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-blue-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Phục vụ 24/7</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-blue-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-blue-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Đặt xe nhanh chóng</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-blue-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-blue-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Tài xế kinh nghiệm</span>
               </li>
             </ul>
-          </div>
+          </article>
 
           <!-- Service 3 -->
-          <div
-            class="service-card glass-card fade-in-up group rounded-3xl p-8"
-            style="animation-delay: 0.3s"
+          <article
+            class="service-card glass-card fade-in-up group rounded-3xl p-8 [animation-delay:0.3s]"
+            aria-labelledby="group-taxi-title"
           >
             <div
               class="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-linear-to-br from-green-400/20 to-green-400/10 transition-transform group-hover:scale-110"
+              role="presentation"
             >
-              <i data-lucide="users" class="h-10 w-10 text-green-400"></i>
+              <i
+                data-lucide="users"
+                class="h-10 w-10 text-green-400"
+                aria-hidden="true"
+              ></i>
             </div>
+
             <h3
+              id="group-taxi-title"
               class="mb-4 text-2xl font-bold text-white transition-colors group-hover:text-green-400"
             >
               Taxi Nhóm
             </h3>
+
             <p class="mb-6 leading-relaxed text-gray-300">
               Dịch vụ taxi cho nhóm đông người, xe 7 chỗ, 16 chỗ phù hợp cho gia
               đình và công ty.
             </p>
-            <ul class="space-y-3 text-sm text-gray-400">
+
+            <ul
+              class="space-y-3 text-sm text-gray-400"
+              aria-label="Tính năng dịch vụ"
+            >
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-green-400"></div>
-                <span>Xe 7-16 chỗ</span>
+                <span
+                  class="h-2 w-2 rounded-full bg-green-400"
+                  aria-hidden="true"
+                ></span>
+                <span>Xe 7–16 chỗ</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-green-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-green-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Phù hợp nhóm đông</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-green-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-green-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Giá ưu đãi nhóm</span>
               </li>
             </ul>
-          </div>
+          </article>
 
           <!-- Service 4 -->
-          <div
-            class="service-card glass-card fade-in-up group rounded-3xl p-8"
-            style="animation-delay: 0.4s"
+          <article
+            class="service-card glass-card fade-in-up group rounded-3xl p-8 [animation-delay:0.4s]"
+            aria-labelledby="airport-taxi-title"
           >
             <div
               class="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-linear-to-br from-purple-400/20 to-purple-400/10 transition-transform group-hover:scale-110"
+              role="presentation"
             >
-              <i data-lucide="plane" class="h-10 w-10 text-purple-400"></i>
+              <i
+                data-lucide="plane"
+                class="h-10 w-10 text-purple-400"
+                aria-hidden="true"
+              ></i>
             </div>
+
             <h3
+              id="airport-taxi-title"
               class="mb-4 text-2xl font-bold text-white transition-colors group-hover:text-purple-400"
             >
               Taxi Sân Bay
             </h3>
+
             <p class="mb-6 leading-relaxed text-gray-300">
               Dịch vụ đưa đón sân bay Tân Sơn Nhất, Cần Thơ với giá cố định,
               không lo tắc đường.
             </p>
-            <ul class="space-y-3 text-sm text-gray-400">
+
+            <ul
+              class="space-y-3 text-sm text-gray-400"
+              aria-label="Tính năng dịch vụ"
+            >
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-purple-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-purple-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Đón đúng giờ</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-purple-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-purple-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Theo dõi chuyến bay</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-purple-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-purple-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Hỗ trợ hành lý</span>
               </li>
             </ul>
-          </div>
+          </article>
 
           <!-- Service 5 -->
-          <div
-            class="service-card glass-card fade-in-up group rounded-3xl p-8"
-            style="animation-delay: 0.5s"
+          <article
+            class="service-card glass-card fade-in-up group rounded-3xl p-8 [animation-delay:0.5s]"
+            aria-labelledby="monthly-taxi-title"
           >
             <div
               class="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-linear-to-br from-orange-400/20 to-orange-400/10 transition-transform group-hover:scale-110"
+              role="presentation"
             >
               <i
                 data-lucide="calendar-days"
                 class="h-10 w-10 text-orange-400"
+                aria-hidden="true"
               ></i>
             </div>
+
             <h3
+              id="monthly-taxi-title"
               class="mb-4 text-2xl font-bold text-white transition-colors group-hover:text-orange-400"
             >
               Taxi Theo Tháng
             </h3>
+
             <p class="mb-6 leading-relaxed text-gray-300">
               Dịch vụ taxi theo tháng cho doanh nghiệp và cá nhân, tiết kiệm chi
               phí di chuyển hàng ngày.
             </p>
-            <ul class="space-y-3 text-sm text-gray-400">
+
+            <ul
+              class="space-y-3 text-sm text-gray-400"
+              aria-label="Tính năng dịch vụ"
+            >
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-orange-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-orange-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Giá ưu đãi theo tháng</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-orange-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-orange-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Tài xế cố định</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-orange-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-orange-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Hóa đơn VAT</span>
               </li>
             </ul>
-          </div>
+          </article>
 
           <!-- Service 6 -->
-          <div
-            class="service-card glass-card fade-in-up group rounded-3xl p-8"
+          <article
+            class="service-card glass-card fade-in-up group"
             style="animation-delay: 0.6s"
+            aria-labelledby="wedding-taxi-title"
           >
             <div
               class="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-linear-to-br from-pink-400/20 to-pink-400/10 transition-transform group-hover:scale-110"
+              role="presentation"
             >
-              <i data-lucide="heart" class="h-10 w-10 text-pink-400"></i>
+              <i
+                data-lucide="heart"
+                class="h-10 w-10 text-pink-400"
+                aria-hidden="true"
+              ></i>
             </div>
+
             <h3
+              id="wedding-taxi-title"
               class="mb-4 text-2xl font-bold text-white transition-colors group-hover:text-pink-400"
             >
               Taxi Cưới Hỏi
             </h3>
+
             <p class="mb-6 leading-relaxed text-gray-300">
               Dịch vụ taxi cho các dịp đặc biệt như cưới hỏi, xe hoa, trang trí
               theo yêu cầu.
             </p>
-            <ul class="space-y-3 text-sm text-gray-400">
+
+            <ul
+              class="space-y-3 text-sm text-gray-400"
+              aria-label="Tính năng dịch vụ"
+            >
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-pink-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-pink-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Xe hoa trang trí</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-pink-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-pink-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Tài xế lịch sự</span>
               </li>
               <li class="flex items-center space-x-3">
-                <div class="h-2 w-2 rounded-full bg-pink-400"></div>
+                <span
+                  class="h-2 w-2 rounded-full bg-pink-400"
+                  aria-hidden="true"
+                ></span>
                 <span>Giá trọn gói</span>
               </li>
             </ul>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -596,7 +722,7 @@
     <section id="booking" class="section-bg-light relative py-20 lg:py-32">
       <div class="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="fade-in-up mb-20 text-center">
+        <div class="fade-in-up mb-16 text-center">
           <div class="mb-4">
             <span
               class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-4 py-2 text-sm font-medium text-yellow-400"
@@ -973,7 +1099,7 @@
     <!-- Enhanced contact section with modern UI/UX -->
     <section id="contact" class="section-bg-light relative py-20 lg:py-32">
       <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="fade-in-up mb-20 text-center">
+        <div class="fade-in-up mb-16 text-center">
           <div class="mb-4">
             <span
               class="inline-block rounded-full border border-yellow-400/30 bg-yellow-400/20 px-4 py-2 text-sm font-medium text-yellow-400"
