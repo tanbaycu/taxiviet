@@ -69,12 +69,9 @@
     <link
       rel="icon"
       type="image/jpeg"
-      href="{{ url_for('static', filename='images/phone-car-icon.jpg') }}"
+      href="./public/images/phone-car-icon.jpg"
     />
-    <link
-      rel="apple-touch-icon"
-      href="{{ url_for('static', filename='images/phone-car-icon.jpg') }}"
-    />
+    <link rel="apple-touch-icon" href="./public/images/phone-car-icon.jpg" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -93,9 +90,12 @@
 
     <!-- STYLES -->
     <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/output.css') }}"
+      rel="preload"
+      href="./src/style.css"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
+    <noscript><link rel="stylesheet" href="./src/style.css" /></noscript>
 
     <!-- STRUCTURED DATA (Enhanced) -->
     <script type="application/ld+json">
@@ -1501,9 +1501,6 @@
     </button>
 
     <!-- Main script -->
-    <script
-      type="module"
-      src="{{ url_for('static', filename='js/main.js') }}"
-    ></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

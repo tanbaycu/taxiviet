@@ -1,5 +1,0 @@
-flask
-flask-mail
-gunicorn
-user-agents==2.2.0
-python-dotenv

@@ -3,19 +3,19 @@
 /* === THEME === */
 @font-face {
     font-family: "Inter";
-    src: url("../fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
+    src: url("../public/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
         format("truetype");
 }
 
 @font-face {
     font-family: "Inter Italic";
-    src: url("../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
+    src: url("../public/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
         format("truetype");
 }
 
 @font-face {
     font-family: "Space Grotesk";
-    src: url("../fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf")
+    src: url("../public/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf")
         format("truetype");
 }
 

@@ -1,4 +1,5 @@
 import { createIcons, icons } from "lucide";
+import "./style.css";
 
 // Cache DOM elements
 const el = {
@@ -93,4 +94,4 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Initialize icons
-createIcons(icons);
+createIcons({ icons });
