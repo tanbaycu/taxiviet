@@ -99,10 +99,6 @@ select {
         );
     }
 
-    .glass-card:active {
-        @apply scale-[0.98] border-[rgba(255,255,255,0.25)] bg-[rgba(255,255,255,0.12)] shadow-[0_12px_48px_rgba(0,0,0,0.4),inset_0_1px_1px_rgba(255,255,255,0.2)];
-    }
-
     /* Hero Section */
     .hero-background {
         @apply absolute inset-0 z-10 overflow-hidden;
@@ -283,10 +279,6 @@ select {
     /* Service Cards */
     .service-card {
         @apply rounded-3xl p-8 transition-all duration-400 ease-[cubic-bezier(0.23,1,0.32,1)];
-    }
-
-    .service-card:active {
-        @apply scale-98 shadow-[0_12px_32px_rgba(0,0,0,0.5)];
     }
 
     /* Navigation */
