@@ -1,3 +1,5 @@
+"use strict";
+
 import { createIcons, icons } from "lucide";
 import "./style.css";
 
@@ -14,32 +16,40 @@ const el = {
 // Update menu icon
 const updateMenuIcon = (isHidden) => {
     if (!el.menuIcon) return;
-    el.menuIcon.innerHTML = "";
     el.menuIcon.setAttribute("data-lucide", isHidden ? "menu" : "x");
-    lucide.createIcons();
+    createIcons({ icons });
 };
 
-// Mobile menu toggle
-el.mobileMenuBtn?.addEventListener("click", () => {
-    updateMenuIcon(el.mobileMenu?.classList.toggle("hidden"));
-});
+// Toggle mobile menu
+const toggleMobileMenu = () => {
+    if (!el.mobileMenu) return;
+    const isHidden = el.mobileMenu.classList.toggle("hidden");
+    updateMenuIcon(isHidden);
+};
 
-// Close menu on link click
-document.querySelectorAll("#mobile-menu a").forEach((link) => {
+el.mobileMenuBtn?.addEventListener("click", toggleMobileMenu);
+
+// Close mobile menu on link click
+el.mobileMenu?.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-        el.mobileMenu?.classList.add("hidden");
+        el.mobileMenu.classList.add("hidden");
         updateMenuIcon(true);
     });
 });
 
 // Scroll handler
-window.addEventListener("scroll", () => {
+const handleScroll = () => {
     const y = window.pageYOffset;
-
     el.navbar?.classList.toggle("scrolled", y > 100);
-    el.backToTopBtn?.classList.toggle("opacity-0", y <= 300);
-    el.backToTopBtn?.classList.toggle("invisible", y <= 300);
-});
+
+    const showBackToTop = y > 300;
+    if (el.backToTopBtn) {
+        el.backToTopBtn.classList.toggle("opacity-0", !showBackToTop);
+        el.backToTopBtn.classList.toggle("invisible", !showBackToTop);
+    }
+};
+
+window.addEventListener("scroll", handleScroll);
 
 // Back to top
 el.backToTopBtn?.addEventListener("click", () => {
@@ -54,34 +64,32 @@ el.bookingForm?.addEventListener("submit", (e) => {
     );
 });
 
-// Intersection Observer
+// Intersection Observer for fade-in animations
 const observer = new IntersectionObserver(
     (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
+        entries.forEach(({ target, isIntersecting }) => {
+            if (isIntersecting && target instanceof HTMLElement) {
+                target.style.opacity = "1";
+                target.style.transform = "translateY(0)";
             }
         });
     },
-    {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-    },
+    { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
 );
 
-document
-    .querySelectorAll(".fade-in-up, .fade-in-left, .fade-in-right")
-    .forEach((el) => {
-        observer.observe(el);
-    });
+Array.from(
+    document.querySelectorAll(".fade-in-up, .fade-in-left, .fade-in-right"),
+).forEach((el) => {
+    observer.observe(el);
+});
 
 // Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
+Array.from(document.querySelectorAll('a[href^="#"]')).forEach((anchor) => {
+    anchor.addEventListener("click", (e) => {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-
+        const target = document.querySelector(
+            anchor.getAttribute("href") || "",
+        );
         if (target) {
             window.scrollTo({
                 top: target.offsetTop - 120,
