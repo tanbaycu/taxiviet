@@ -1,3 +1,5 @@
+import { createIcons, icons } from "lucide";
+
 // Cache DOM elements
 const el = {
     mobileMenuBtn: document.getElementById("mobile-menu-btn"),
@@ -91,4 +93,4 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Initialize icons
-lucide.createIcons();
+createIcons(icons);

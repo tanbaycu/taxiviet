@@ -1,6 +1,24 @@
 @import "tailwindcss";
 
 /* === THEME === */
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
+        format("truetype");
+}
+
+@font-face {
+    font-family: "Inter Italic";
+    src: url("../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
+        format("truetype");
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf")
+        format("truetype");
+}
+
 @theme {
     --font-Space-Grotesk: "Space Grotesk", sans-serif;
     --font-Inter: "Inter", system-ui, sans-serif;
@@ -55,7 +73,7 @@ select {
 
     /* Floating Header */
     .floating-header {
-        @apply fixed top-[calc(var(--scrolling-banner-h)+10px)] right-0 left-0 z-50 mx-[5px] rounded-2xl border border-white/15 shadow-lg transition-all duration-300 ease-in-out md:mx-auto md:max-w-5xl;
+        @apply fixed top-[calc(var(--scrolling-banner-h)+10px)] right-0 left-0 z-50 mx-[5px] rounded-2xl border border-white/15 shadow-lg transition-all duration-300 ease-in-out lg:mx-auto lg:max-w-4xl xl:max-w-5xl;
         background: rgba(17, 24, 39, 0.4);
         backdrop-filter: blur(30px) saturate(180%);
     }
@@ -290,6 +308,12 @@ select {
     }
 }
 
+@layer utilities {
+    .xl-container {
+        @apply xl:mx-auto xl:max-w-5xl;
+    }
+}
+
 /* === ANIMATIONS === */
 @keyframes scrollLeft {
     to {
@@ -400,12 +424,6 @@ select {
         height: 4px;
         margin: 0 0.75rem;
     }
-    h1 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 1.25rem;
-    }
     .glass-card {
         padding: 1rem;
     }
@@ -431,16 +449,6 @@ select {
     .scroll-content .dot {
         width: 5px;
         height: 5px;
-    }
-    h1 {
-        font-size: 1.75rem;
-        line-height: 1.1;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    h3 {
-        font-size: 1.25rem;
     }
     .glass-card {
         padding: 1.25rem;
