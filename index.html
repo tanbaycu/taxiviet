@@ -184,6 +184,22 @@
 
       gtag("config", "AW-17769752726");
     </script>
+
+    <!-- Google conversion function -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-17769752726/rG-8CK7m3MkbEJbRo5lC",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
   </head>
 
   <body>
@@ -258,6 +274,7 @@
               href="tel:0365942478"
               class="hidden items-center space-x-2 rounded-full bg-yellow-400 px-4 py-2 font-medium text-gray-900 transition-all hover:bg-yellow-500 focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:outline-none md:flex"
               aria-label="Call Tuấn Taxi at 0365 942 478"
+              data-conversion
             >
               <i data-lucide="phone" class="h-4 w-4" aria-hidden="true"></i>
               <span>0365&nbsp;942&nbsp;478</span>
@@ -374,6 +391,7 @@
             role="button"
             class="btn-primary inline-flex items-center gap-3 rounded-full px-8 py-4 text-xl font-semibold shadow-lg transition-all hover:shadow-xl focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:outline-none"
             aria-label="Đặt xe hoặc gọi 0365 942 478"
+            data-conversion
           >
             <i data-lucide="phone-call" class="h-5 w-5" aria-hidden="true"></i>
             <span aria-hidden="false"
@@ -874,6 +892,7 @@
             rel="noopener noreferrer"
             class="inline-flex items-center gap-3 rounded-2xl bg-blue-500 px-9 py-4 text-xl font-semibold text-white transition-colors hover:bg-blue-600 focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:outline-none"
             aria-label="Chat via Zalo"
+            data-conversion
           >
             <i
               data-lucide="message-circle"
@@ -891,6 +910,7 @@
             href="tel:0365942478"
             class="inline-flex items-center gap-3 rounded-2xl bg-yellow-400 px-9 py-4 text-xl font-semibold text-gray-900 transition-colors hover:bg-yellow-500 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:outline-none"
             aria-label="Call phone number 0365 942 478"
+            data-conversion
           >
             <i data-lucide="phone" class="h-6 w-6" aria-hidden="true"></i>
             <span>0365&nbsp;942&nbsp;478</span>
@@ -1171,6 +1191,7 @@
               href="tel:0365942478"
               aria-label="Gọi số hotline 0365 942 478"
               class="flex items-center gap-4"
+              data-conversion
             >
               <div
                 class="rounded-2xl bg-linear-to-br from-yellow-400 to-yellow-500 p-4 shadow-lg transition-transform group-hover:scale-110"
@@ -1205,6 +1226,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat Zalo với Tuấn Taxi"
+              data-conversion
             >
               <div class="flex items-center gap-4">
                 <div
@@ -1349,6 +1371,7 @@
                 rel="noopener noreferrer"
                 class="group rounded-2xl bg-white/5 p-4 transition-all hover:bg-yellow-400/20 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
                 aria-label="Zalo"
+                data-conversion
               >
                 <i
                   data-lucide="message-circle"
@@ -1360,6 +1383,7 @@
                 href="tel:0365942478"
                 class="group rounded-2xl bg-white/5 p-4 transition-all hover:bg-yellow-400/20 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
                 aria-label="Call Tuấn Taxi"
+                data-conversion
               >
                 <i
                   data-lucide="phone"
@@ -1448,6 +1472,7 @@
                 <a
                   href="tel:0365942478"
                   class="transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
+                  data-conversion
                 >
                   0365&nbsp;942&nbsp;478
                 </a>
@@ -1470,20 +1495,6 @@
                 </div>
                 <span>24/7 - Phục vụ không ngừng</span>
               </li>
-              <li class="flex items-center gap-3">
-                <div
-                  class="rounded-full bg-yellow-400/10 p-2"
-                  aria-hidden="true"
-                >
-                  <i data-lucide="mail" class="h-4 w-4 text-yellow-400"></i>
-                </div>
-                <a
-                  href="mailto:tuantaxi@gmail.com"
-                  class="transition-colors hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
-                >
-                  tuantaxi@gmail.com
-                </a>
-              </li>
             </ul>
           </address>
         </div>
@@ -1497,7 +1508,10 @@
           </p>
           <p class="text-sm text-gray-400">
             Gọi nhanh:
-            <a href="tel:0365942478" class="text-yellow-400 hover:underline"
+            <a
+              href="tel:0365942478"
+              class="text-yellow-400 hover:underline"
+              data-conversion
               >0365&nbsp;942&nbsp;478</a
             >
           </p>

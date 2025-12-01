@@ -103,3 +103,24 @@ Array.from(document.querySelectorAll('a[href^="#"]')).forEach((anchor) => {
 
 // Initialize icons
 createIcons({ icons });
+
+// Conversion function
+function gtag_report_conversion(url) {
+    var callback = function () {
+        if (typeof url != "undefined") {
+            window.location = url;
+        }
+    };
+    gtag("event", "conversion", {
+        send_to: "AW-17769752726/rG-8CK7m3MkbEJbRo5lC",
+        event_callback: callback,
+    });
+    return false;
+}
+
+// Track all buttons with data attribute
+document.querySelectorAll("[data-conversion]").forEach((btn) => {
+    btn.addEventListener("click", function () {
+        gtag_report_conversion();
+    });
+});
