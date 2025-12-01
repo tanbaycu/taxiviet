@@ -112,7 +112,9 @@ function gtag_report_conversion(url) {
         }
     };
     gtag("event", "conversion", {
-        send_to: "AW-17769752726/rG-8CK7m3MkbEJbRo5lC",
+        send_to: "AW-17769752726/P98FCMKu7skbEJbRo5lC",
+        value: 5500.0,
+        currency: "VND",
         event_callback: callback,
     });
     return false;
