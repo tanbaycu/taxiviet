@@ -66,12 +66,8 @@
     <meta name="twitter:creator" content="@tuantaxi" />
 
     <!-- FAVICON / APP ICONS -->
-    <link
-      rel="icon"
-      type="image/jpeg"
-      href="./public/images/phone-car-icon.jpg"
-    />
-    <link rel="apple-touch-icon" href="./public/images/phone-car-icon.jpg" />
+    <link rel="icon" type="image/jpeg" href="/images/phone-car-icon.jpg" />
+    <link rel="apple-touch-icon" href="/images/phone-car-icon.jpg" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -93,7 +89,7 @@
       rel="preload"
       href="./src/style.css"
       as="style"
-      onload="this.rel='stylesheet'"
+      onload="this.rel = 'stylesheet'"
     />
     <noscript><link rel="stylesheet" href="./src/style.css" /></noscript>
 
@@ -1485,20 +1481,30 @@
 
         <!-- Footer bottom -->
         <div
-          class="mt-16 flex flex-col items-center justify-between gap-4 border-t border-gray-800 pt-8 md:flex-row"
+          class="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-gray-800 pt-8"
         >
           <p class="text-center text-gray-400 md:text-left">
-            © 2025 Taxi Long An - Taxi Xanh Cái Bè. Dịch vụ taxi liên tỉnh
-            24/7.
+            © 2025 Taxi Long An - Taxi Xanh Cái Bè. Dịch vụ taxi liên tỉnh 24/7.
           </p>
+
           <p class="text-sm text-gray-400">
             Gọi nhanh:
             <a
               href="tel:0365942478"
               class="text-yellow-400 hover:underline"
               data-conversion
-              >0365&nbsp;942&nbsp;478</a
             >
+              0365&nbsp;942&nbsp;478
+            </a>
+          </p>
+
+          <p class="w-full">
+            <a
+              href="/privacy-policy.html"
+              class="text-left text-gray-400 hover:text-yellow-400 focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 focus-visible:outline-none"
+            >
+              Chính sách quyền riêng tư
+            </a>
           </p>
         </div>
       </div>
